@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Куликов](https://up.htmlacademy.ru/adaptive/21/user/1004201).
-* Наставник: `Неизвестно`.
+* Наставник: `Андрей Корейкин`.
 
 ---
 
