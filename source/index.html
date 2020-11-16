@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -53,9 +53,9 @@
           <dt class="week-product__term">Высота</dt>
           <dd class="week-product__definition">15 см</dd>
         </dl>
-        <img src="#" alt="Изображение вязаных корзинок">
+        <img src="#" alt="Вязаные корзинки, сделанные компанией Мишка">
         <p class="week-product__price">Цена: 990 руб.</p>
-        <button class="button">Заказать</button>
+        <button class="week-product__button button">Заказать</button>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
@@ -72,49 +72,61 @@
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item slider__item--current">
-            <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-              у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <blockquote>
+              <p class="reviews__description">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+                у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
               <p class="reviews__author-name">Анастасия Красильникова</p>
-              <p class="reviews__author-contact">@misssssiskras</p>
+              <cite class="reviews__author-contact">@misssssiskras</cite>
+            </blockquote>
           </li>
           <li class="reviews__item slider__item">
-            <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!</p>
+            <blockquote>
+              <p class="reviews__description">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!
+              </p>
               <p class="reviews__author-name">Екатерина Красильникова</p>
-              <p class="reviews__author-contact">@misssssiskras2</p>
+              <cite class="reviews__author-contact">@misssssiskras2</cite>
+            </blockquote>
           </li>
         </ul>
         <p class="reviews__toggles slider__toggles">
           <button class="slider-toggle" aria-label="Назад"></button>
           <button class="slider-toggle" aria-label="Вперед"></button>
         </p>
-        <button class="button">Написать</button>
+        <button class="reviews__button button">Написать</button>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__information">
           <dt class="contacts__term">e-mail:</dt>
-          <dd class="contacts__definition contacts__definition--active">info@mimimishkashop.ru</dd>
+          <dd class="contacts__definition contacts__definition--active"><a href="http:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt class="contacts__term">адрес:</dt>
-          <dd class="contacts__definition">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+          <dd class="contacts__definition"><address>г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address></dd>
         </dl>
         <img src="#" alt="Офис компании по адресу: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
-        <button class="button">Напишите нам</button>
+        <button class="contacts__button button">Напишите нам</button>
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="footer__list">
-        <li class="footer__item"><a href="#"><img src="#" alt="Иконка инстаграма"></a></li>
-        <li class="footer__item"><a href="#"><img src="#" alt="Иконка фейсбука"></a></li>
-        <li class="footer__item"><a href="#"><img src="#" alt="Иконка твиттера"></a></li>
-      </ul>
-      <p class="footer__developer">Разработано</p>
-      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="#" alt="Логотип html academy">
-      </a>
+      <section class="footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item"><a href="#"><img src="#" alt="Иконка инстаграма"></a></li>
+          <li class="footer-social__item"><a href="#"><img src="#" alt="Иконка фейсбука"></a></li>
+          <li class="footer-social__item"><a href="#"><img src="#" alt="Иконка твиттера"></a></li>
+        </ul>
+      </section>
+      <p class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__button" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="#" alt="Логотип html academy">
+        </a>
+      </p>
     </footer>
   </body>
 </html>
