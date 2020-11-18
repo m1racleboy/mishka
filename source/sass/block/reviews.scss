@@ -1,0 +1,33 @@
+.reviews {
+  outline: 5px blue solid;
+  margin-bottom: 38px;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $grey-dark;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.reviews__author-contact {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: $grey-dark;
+}

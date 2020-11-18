@@ -1,0 +1,34 @@
+.main-header {
+  outline: 5px green solid;
+  margin-bottom: 31px;
+}
+
+.main-header__title {
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.main-header__list {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-header__item {
+  padding: 24px 0 31px;
+}
+
+.main-header__item-interior {
+  background-color: #63D1BB;
+}
+
+.main-header__item-toy {
+  background-color: #56C3B2;;
+}
+
+
+.main-header__link {
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
+}

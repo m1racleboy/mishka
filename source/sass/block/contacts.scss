@@ -1,0 +1,22 @@
+.contacts {
+  outline: 5px yellow solid;
+  margin-bottom: 39px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__information {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $grey-dark;
+}
+
+.contacts__link{
+  color: $grey-dark;
+}
