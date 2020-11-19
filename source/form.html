@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Мишка - форма</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="#" alt="Логотип - Мишка">
+        <img src="#" alt="Логотип - Мишка" />
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html" target="_blank">Вязание на заказ</a>
+            <a class="site-list__link" href="blank.html" target="_blank"
+              >Вязание на заказ</a
+            >
           </li>
           <li class="site-list__item">
-            <a href="blank.html" target="_blank">Поиск по сайту</a>
+            <a class="site-list__link" href="blank.html" target="_blank"
+              >Поиск по сайту</a
+            >
           </li>
           <li class="site-list__item">
-            <a href="blank.html" target="_blank">Корзина: пока пуста</a>
+            <a class="site-list__link" href="blank.html" target="_blank"
+              >Корзина: пока пуста</a
+            >
           </li>
         </ul>
       </nav>
@@ -32,20 +40,34 @@
     <main class="page-main">
       <section class="main-header">
         <h1 class="main-header__title">Вязание на заказ</h1>
-        <p class="main-header__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="main-header__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
       </section>
       <section class="filters">
         <h2 class="visually-hidden">Форма формирования заказа</h2>
-        <form class="filters__form" action="https://echo.htmlacademy.ru" method="GET">
+        <form
+          class="filters__form"
+          action="https://echo.htmlacademy.ru"
+          method="GET"
+        >
           <fieldset class="filters__fieldset filters__type">
             <legend class="filters__title">Тип</legend>
             <ul class="filters__type-list">
               <li class="filters__type-item">
-                <input type="radio" name="interior-accessory" id="filter-interior-accessory" checked>
-                <label for="filter-interior-accessory">Аксессуар для интерьера</label>
+                <input
+                  type="radio"
+                  name="interior-accessory"
+                  id="filter-interior-accessory"
+                  checked
+                />
+                <label for="filter-interior-accessory"
+                  >Аксессуар для интерьера</label
+                >
               </li>
               <li class="filters__type-item">
-                <input type="radio" name="kid-toy" id="filter-kid-toy">
+                <input type="radio" name="kid-toy" id="filter-kid-toy" />
                 <label for="filter-kid-toy">Детская игрушка</label>
               </li>
             </ul>
@@ -54,27 +76,27 @@
             <legend class="filters__title">Цвет</legend>
             <ul class="filters__color-list">
               <li class="filters__color-item">
-                <input type="checkbox" name="white" id="filter-white" checked>
+                <input type="checkbox" name="white" id="filter-white" checked />
                 <label for="filter-white">Белый</label>
               </li>
               <li class="filters__color-item">
-                <input type="checkbox" name="grey" id="filter-grey" checked>
+                <input type="checkbox" name="grey" id="filter-grey" checked />
                 <label for="filter-grey">Серый</label>
               </li>
               <li class="filters__color-item">
-                <input type="checkbox" name="tiffany" id="filter-tiffany">
+                <input type="checkbox" name="tiffany" id="filter-tiffany" />
                 <label for="filter-tiffany">«Тиффани»</label>
               </li>
               <li class="filters__color-item">
-                <input type="checkbox" name="black" id="filter-black">
+                <input type="checkbox" name="black" id="filter-black" />
                 <label for="filter-black">Черный</label>
               </li>
               <li class="filters__color-item">
-                <input type="checkbox" name="pink" id="filter-pink">
+                <input type="checkbox" name="pink" id="filter-pink" />
                 <label for="filter-pink">Розовый</label>
               </li>
               <li class="filters__color-item">
-                <input type="checkbox" name="orange" id="filter-orange">
+                <input type="checkbox" name="orange" id="filter-orange" />
                 <label for="filter-orange">Оранжевый</label>
               </li>
             </ul>
@@ -84,29 +106,61 @@
             <ul class="filters__name-list">
               <li class="filters__name-item">
                 <label for="filter-name">Имя:</label>
-                <input type="text" name="name" id="filter-name" placeholder="Введите ваше имя*" required>
+                <input
+                  type="text"
+                  name="name"
+                  id="filter-name"
+                  placeholder="Введите ваше имя*"
+                  required
+                />
               </li>
               <li class="filters__name-item">
                 <label for="filter-surname">Фамилия:</label>
-                <input type="text" name="surname" id="filter-surname" placeholder="Укажите фамилию*" required>
+                <input
+                  type="text"
+                  name="surname"
+                  id="filter-surname"
+                  placeholder="Укажите фамилию*"
+                  required
+                />
               </li>
               <li class="filters__name-item">
                 <label for="filter-lastname">Отчество:</label>
-                <input type="text" name="lastname" id="filter-lastname" placeholder="Отчество, если желаете">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="filter-lastname"
+                  placeholder="Отчество, если желаете"
+                />
               </li>
             </ul>
           </fieldset>
           <fieldset class="filters__fieldset filters__contacts">
             <legend class="visually-hidden">Ваши контакты</legend>
             <label class="filters__title">Тел</label>
-            <input type="tel" name="phone" inputmode="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input
+              type="tel"
+              name="phone"
+              inputmode="tel"
+              placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              required
+            />
             <label class="filters__title">e-mail</label>
-            <input type="email" name="email" inputmode="email" placeholder="Ваш Email*" required>
-            <fieldset class="filters__fieldset filters__info">
+            <input
+              type="email"
+              name="email"
+              inputmode="email"
+              placeholder="Ваш Email*"
+              required
+            />
           </fieldset>
+          <fieldset class="filters__fieldset filters__info">
             <legend class="filters__title">Доп</legend>
             <label class="visually-hidden">Дополнительное</label>
-            <textarea name="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea
+              name="additional-information"
+              placeholder="Опишите все ваши пожелания к заказу"
+            ></textarea>
           </fieldset>
           <p class="filters__legend">*Поля обязательны для заполнения</p>
           <button type="submit" class="button">Отправить заказ</button>
@@ -117,15 +171,30 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social__list">
-          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка инстаграма"></a></li>
-          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка фейсбука"></a></li>
-          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка твиттера"></a></li>
+          <li class="footer-social__item">
+            <a href="blank.html" target="_blank"
+              ><img src="#" alt="Иконка инстаграма"
+            /></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="blank.html" target="_blank"
+              ><img src="#" alt="Иконка фейсбука"
+            /></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="blank.html" target="_blank"
+              ><img src="#" alt="Иконка твиттера"
+            /></a>
+          </li>
         </ul>
       </section>
       <p class="page-footer__copyright">
         Разработано
-        <a class="page-footer__button" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="#" alt="Логотип html academy">
+        <a
+          class="page-footer__button"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <img src="#" alt="Логотип html academy" />
         </a>
       </p>
     </footer>

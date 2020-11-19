@@ -1,12 +1,17 @@
 .main-header {
   outline: 5px green solid;
   margin-bottom: 31px;
-  background-color: $grey-light;
 }
 
 .main-header__title {
   @include font("Open Sans bold", 27px, normal, 30px, 700);
   margin: 0;
+  background-color: $grey-light;
+}
+
+.main-header__description {
+  @include font("Open Sans", 13px, normal, 24px, normal);
+  color: $grey-dark;
 }
 
 .main-header__list {
