@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Мишка - каталог товаров</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="#" alt="Логотип - Мишка">
+        <img src="#" alt="Логотип - Мишка" />
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html" target="_blank">Вязание на заказ</a>
+            <a class="site-list__link" href="blank.html" target="_blank"
+              >Вязание на заказ</a
+            >
           </li>
           <li class="site-list__item">
-            <a href="blank.html" target="_blank">Поиск по сайту</a>
+            <a class="site-list__link" href="blank.html" target="_blank"
+              >Поиск по сайту</a
+            >
           </li>
           <li class="site-list__item">
-            <a href="blank.html" target="_blank">Корзина: пока пуста</a>
+            <a class="site-list__link" href="blank.html" target="_blank"
+              >Корзина: пока пуста</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <h1 class="main-header__title">Каталог товаров</h1>
       <section class="products">
         <h2 class="visually-hidden">Вязаные игрушки</h2>
         <ul class="products__list">
           <li class="products__item">
-            <img src="#" alt="Игрушка зайчик попрыгайчик компании Мишка">
+            <img
+              src="img/photo-1-mobile.jpg"
+              alt="Игрушка зайчик попрыгайчик компании Мишка"
+              width="260"
+              height="195"
+            />
             <h2 class="products__title">Зайчик попрыгайчик</h2>
             <p class="products__description">Рост 30 см, вес 200 г</p>
             <p class="products__price">1 200 руб.</p>
-            <button type="button" class="products__button" aria-label="Добавить в корзину"></button>
+            <button
+              type="button"
+              class="products__button"
+              aria-label="Добавить в корзину"
+            ></button>
           </li>
           <li class="products__item">
-            <img src="#" alt="Корзина для белья компании Мишка">
+            <img
+              src="img/photo-2-mobile.jpg"
+              alt="Корзина для белья компании Мишка"
+              width="260"
+              height="195"
+            />
             <h2 class="products__title">Корзинка для белья</h2>
             <p class="products__description">Диаметр 15 см, высота 10 см</p>
             <p class="products__price">690 руб.</p>
-            <button type="button" class="products__button" aria-label="Добавить в корзину"></button>
+            <button
+              type="button"
+              class="products__button"
+              aria-label="Добавить в корзину"
+            ></button>
           </li>
           <li class="products__item">
-            <img src="#" alt="Большая корзинка для игрушек компании Мишка">
+            <img
+              src="img/photo-3-mobile.jpg"
+              alt="Большая корзинка для игрушек компании Мишка"
+              width="260"
+              height="195"
+            />
             <h2 class="products__title">Большая корзинка для игрушек</h2>
             <p class="products__description">Диаметр 30 см, высота 30 см</p>
             <p class="products__price">1 500 руб.</p>
-            <button type="button" class="products__button" aria-label="Добавить в корзину"></button>
+            <button
+              type="button"
+              class="products__button"
+              aria-label="Добавить в корзину"
+            ></button>
           </li>
         </ul>
       </section>
       <section class="production-process">
         <h2 class="production-process__title">Процесс производства</h2>
         <div class="production-process__video-wrapper">
-          <img src="#" alt="Превью к видео - процесс производства компании Мишка">
-          <button type="button" class="video-wrapper__button" aria-label="Включить видео"></button>
+          <img
+            src="img/video-mobile.jpg"
+            alt="Превью к видео - процесс производства компании Мишка"
+            width="260"
+            height="150"
+          />
+          <button
+            type="button"
+            class="video-wrapper__button"
+            aria-label="Включить видео"
+          ></button>
         </div>
-        <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <p class="production-process__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+          о том, как появляются наши товары.
+        </p>
         <a href="form.html" class="production-process__button">Сделать заказ</a>
       </section>
     </main>
@@ -71,15 +118,31 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social__list">
-          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка инстаграма"></a></li>
-          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка фейсбука"></a></li>
-          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка твиттера"></a></li>
+          <li class="footer-social__item">
+            <a href="blank.html" target="_blank"
+              ><img src="#" alt="Иконка инстаграма"
+            /></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="blank.html" target="_blank"
+              ><img src="#" alt="Иконка фейсбука"
+            /></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="blank.html" target="_blank"
+              ><img src="#" alt="Иконка твиттера"
+            /></a>
+          </li>
         </ul>
       </section>
       <p class="page-footer__copyright">
         Разработано
-        <a class="page-footer__button" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img src="#" alt="Логотип html academy">
+        <a
+          class="page-footer__button"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank"
+        >
+          <img src="#" alt="Логотип html academy" />
         </a>
       </p>
     </footer>

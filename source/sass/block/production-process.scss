@@ -1,0 +1,20 @@
+.production-process {
+  outline: 5px yellow solid;
+  margin-bottom: 91px;
+}
+
+.production-process__title {
+  @include font("Open Sans bold", 17px, normal, 24px, 700);
+}
+
+.production-process__description {
+  @include font("Open Sans", 13px, normal, 24px, normal);
+  color: $grey-dark;
+}
+
+.production-process__button {
+  @include font("Open Sans bold", 18px, normal, 16px, 700);
+  color: $grey-dark;
+  padding: 0 18px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+.products {
+  outline: 5px red solid;
+  margin-bottom: 30px;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__title {
+  @include font("Open Sans bold", 17px, normal, 24px, 700);
+}
+
+.products__description {
+  @include font("Open Sans", 13px, normal, 30px, normal);
+  color: $grey-dark;
+}
+
+.products__price {
+  @include font("Open Sans bold", 15px, normal, 24px, 700);
+}
