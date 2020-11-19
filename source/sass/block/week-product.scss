@@ -4,36 +4,26 @@
 }
 
 .week-product__title {
-  font-size: 25px;
-  line-height: 30px;
+  @include font("Open Sans bold", 25px, normal, 30px, 700);
 }
 
 .week-product__legend {
-  font-size: 17px;
-  line-height: 20px;
-  color: #63D1BB;
+  @include font("Open Sans bold", 17px, normal, 20px, 700);
+  text-transform: uppercase;
+  color: #63d1bb;
 }
 
 .week-product__desctiption {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
+  @include font("Open Sans", 15px, normal, 24px, normal);
   color: $grey-dark;
 }
 
 .week-product__characteristic {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
+  @include font("Open Sans", 15px, normal, 20px, normal);
   color: $grey-dark;
 }
 
 .week-product__price {
-  font-size: 17px;
-  line-height: 24px;
+  @include font("Open Sans bold", 17px, normal, 24px, 700);
   color: $grey-dark;
 }

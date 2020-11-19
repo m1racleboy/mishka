@@ -4,6 +4,5 @@
 }
 
 .page-footer__copyright-span {
-  font-size: 19px;
-  line-height: 18px;
+  @include font("Open Sans bold", 19px, normal, 18px, 700);
 }

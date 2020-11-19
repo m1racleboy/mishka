@@ -1,11 +1,11 @@
 .main-header {
   outline: 5px green solid;
   margin-bottom: 31px;
+  background-color: $grey-light;
 }
 
 .main-header__title {
-  font-size: 27px;
-  line-height: 30px;
+  @include font("Open Sans bold", 27px, normal, 30px, 700);
   margin: 0;
 }
 
@@ -19,16 +19,14 @@
 }
 
 .main-header__item-interior {
-  background-color: #63D1BB;
+  background-color: #63d1bb;
 }
 
 .main-header__item-toy {
-  background-color: #56C3B2;;
+  background-color: #56c3b2;
 }
 
-
 .main-header__link {
-  font-size: 19px;
-  line-height: 24px;
-  color: white;
+  @include font("Open Sans bold", 19px, normal, 24px, 700);
+  color: #ffffff;
 }

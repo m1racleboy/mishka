@@ -4,11 +4,9 @@
 }
 
 .about-us__title {
-  font-size: 25px;
-  line-height: 30px;
+  @include font("Open Sans bold", 25px, normal, 30px, 700);
 }
 
 .about-us__item {
-  font-size: 17px;
-  line-height: 20px;
+  @include font("Open Sans bold", 17px, normal, 20px, 700);
 }

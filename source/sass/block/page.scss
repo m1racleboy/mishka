@@ -12,11 +12,9 @@ img {
   align-content: start;
   min-height: 100%;
 
-  grid-template-rows:         min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
 
-  font-style: normal;
-  font-weight: bold;
-  font-family: "Open Sans bold", Arial, sans-serif;
+  @include font("Open Sans bold", 18px, normal, 20px, 700);
   color: black;
 }
 
@@ -36,8 +34,7 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .page ul {
@@ -54,9 +51,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  @include font("Open Sans bold", 18px, normal, 20px, 700);
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 20px;
   color: $grey-dark;
   padding: 16px 0;
   background-color: transparent;

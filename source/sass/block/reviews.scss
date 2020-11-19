@@ -4,30 +4,19 @@
 }
 
 .reviews__title {
-  font-size: 25px;
-  line-height: 30px;
+  @include font("Open Sans bold", 25px, normal, 30px, 700);
 }
 
 .reviews__description {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
+  @include font("Open Sans", 15px, normal, 30px, normal);
   color: $grey-dark;
 }
 
 .reviews__author-name {
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
+  @include font("Open Sans bold", 17px, normal, 24px, 700);
 }
 
 .reviews__author-contact {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 24px;
+  @include font("Open Sans", 17px, normal, 24px, normal);
   color: $grey-dark;
 }

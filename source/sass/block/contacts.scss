@@ -4,19 +4,14 @@
 }
 
 .contacts__title {
-  font-size: 18px;
-  line-height: 30px;
+  @include font("Open Sans bold", 18px, normal, 30px, 700);
 }
 
 .contacts__information {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  @include font("Open Sans", 14px, normal, 20px, normal);
   color: $grey-dark;
 }
 
-.contacts__link{
+.contacts__link {
   color: $grey-dark;
 }
