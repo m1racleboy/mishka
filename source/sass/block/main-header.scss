@@ -5,13 +5,8 @@
 }
 
 .main-header__title {
-  @include font("Open Sans bold", 27px, normal, 30px, 700);
+  @include font-bold(27px, 30px);
   margin: 0;
-}
-
-.main-header__list {
-  padding: 0;
-  margin: 0 auto;
 }
 
 .main-header__item {
@@ -19,14 +14,14 @@
 }
 
 .main-header__item-interior {
-  background-color: #63d1bb;
+  background-color: $aqua-green;
 }
 
 .main-header__item-toy {
-  background-color: #56c3b2;
+  background-color: $turquoise;
 }
 
 .main-header__link {
-  @include font("Open Sans bold", 19px, normal, 24px, 700);
-  color: #ffffff;
+  @include font-bold(19px, 24px);
+  color: $white;
 }

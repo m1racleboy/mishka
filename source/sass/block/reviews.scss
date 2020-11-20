@@ -4,19 +4,19 @@
 }
 
 .reviews__title {
-  @include font("Open Sans bold", 25px, normal, 30px, 700);
+  @include font-bold(25px, 30px);
 }
 
 .reviews__description {
-  @include font("Open Sans", 15px, normal, 30px, normal);
+  @include font-normal(15px, 30px);
   color: $grey-dark;
 }
 
 .reviews__author-name {
-  @include font("Open Sans bold", 17px, normal, 24px, 700);
+  @include font-bold(17px, 24px);
 }
 
 .reviews__author-contact {
-  @include font("Open Sans", 17px, normal, 24px, normal);
+  @include font-normal(17px, 24px);
   color: $grey-dark;
 }
