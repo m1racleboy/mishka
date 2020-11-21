@@ -10,44 +10,26 @@
 }
 
 .filters__title {
-  @include font("Open Sans", 17px, normal, 16px, 700);
+  @include font-normal(17px);
   text-transform: uppercase;
-  color: #63d1bb;
-}
-
-.filters__type-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.filters__color-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  color: $aqua-green;
 }
 
 .filters__type-item,
 .filters__color-item,
 .filters__name-item {
-  @include font("Open Sans", 17px, normal, 18px, 700);
-}
-
-.filters__name-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include font-normal(17px);
 }
 
 .filters__name-item > input[type="text"]::placeholder,
 .filters__title + input::placeholder,
 .filters__info > textarea::placeholder {
-  @include font("Open Sans", 17px, normal, 18px, normal);
-  color: #000000;
+  @include font-normal(17px);
+  color: $black;
   opacity: 30%;
 }
 
 .filters__legend {
-  @include font("Open Sans", 14px, normal, 16px, normal);
+  @include font-normal(14px);
   color: $grey-dark;
 }

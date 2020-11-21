@@ -1,4 +1,12 @@
-@mixin font($ff, $fs, $fst, $lh, $fw) {
+@mixin font-bold($fs, $lh: $fs + 2px, $ff:"Open Sans bold", $fw: 700, $fst: normal) {
+  font-family: $ff, "Arial", sans-serif;
+  font-size: $fs;
+  font-style: $fst;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+@mixin font-normal($fs, $lh: $fs + 2px, $ff:"Open Sans", $fw: normal, $fst: normal) {
   font-family: $ff, "Arial", sans-serif;
   font-size: $fs;
   font-style: $fst;
