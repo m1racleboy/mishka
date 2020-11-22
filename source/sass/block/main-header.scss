@@ -11,12 +11,13 @@
 }
 
 .main-header__description {
-  @include font("Open Sans", 13px, normal, 24px, normal);
+  @include font(14px, 24px);
   color: $grey-dark;
 }
 
 .main-header__item {
-  padding: 24px 0 31px;
+  padding-top: 24px;
+  padding-bottom: 31px;
 }
 
 .main-header__item-interior {
