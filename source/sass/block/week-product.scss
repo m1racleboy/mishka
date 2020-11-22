@@ -5,23 +5,26 @@
 }
 
 .week-product__title {
-  @include font-bold(25px, 30px);
+  @include font(25px, 30px);
+  font-weight: 700;
 }
 
 .week-product__legend {
-  @include font-bold(17px, 20px);
+  @include font(17px, 20px);
+  font-weight: 700;
   text-transform: uppercase;
   color: $aqua-green;
 }
 
-.week-product__desctiption {
-  @include font-normal(15px, 24px);
+.week-product__description {
+  @include font(15px, 24px);
 }
 
 .week-product__characteristic {
-  @include font-normal(15px, 20px);
+  @include font(15px, 20px);
 }
 
 .week-product__price {
-  @include font-bold(17px, 24px);
+  @include font(17px, 24px);
+  font-weight: 700;
 }

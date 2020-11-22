@@ -3,16 +3,16 @@
 }
 
 .page__body {
+  @include font(18px);
   display: grid;
   align-content: start;
   min-height: 100%;
 
   grid-template-rows: min-content 1fr min-content;
 
-  @include font-normal(18px);
-  color: $black;
-}
+  font-family: "Open Sans", "Arial", sans-serif;
 
-.page a {
-  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: $black;
 }

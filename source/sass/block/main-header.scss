@@ -4,7 +4,8 @@
 }
 
 .main-header__title {
-  @include font-bold(27px, 30px);
+  @include font(27px, 30px);
+  font-weight: 700;
   margin: 0;
   background-color: $grey-light;
 }
@@ -27,6 +28,7 @@
 }
 
 .main-header__link {
-  @include font-bold(19px, 24px);
+  @include font(19px, 24px);
+  font-weight: 700;
   color: $white;
 }
