@@ -3,11 +3,8 @@
 }
 
 .site-list__item {
-  @include font-bold(17px, 24px);
+  @include font(17px, 24px);
+  font-weight: 700;
   padding-top: 29px;
   padding-bottom: 26px;
-}
-
-.site-list__link {
-  color: $black;
 }

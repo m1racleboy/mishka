@@ -4,19 +4,21 @@
 }
 
 .reviews__title {
-  @include font-bold(25px, 30px);
+  @include font(25px, 30px);
+  font-weight: 700;
 }
 
 .reviews__description {
-  @include font-normal(15px, 30px);
+  @include font(15px, 30px);
   color: $grey-dark;
 }
 
 .reviews__author-name {
-  @include font-bold(17px, 24px);
+  @include font(17px, 24px);
+  font-weight: 700;
 }
 
 .reviews__author-contact {
-  @include font-normal(17px, 24px);
+  @include font(17px, 24px);
   color: $grey-dark;
 }
