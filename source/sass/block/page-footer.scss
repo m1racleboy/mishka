@@ -1,0 +1,10 @@
+.page-footer {
+  background-color: $grey-light;
+  outline: 5px pink solid;
+  width: 100%;
+}
+
+.page-footer__copyright-span {
+  @include font(19px, 21px);
+  font-weight: 700;
+}

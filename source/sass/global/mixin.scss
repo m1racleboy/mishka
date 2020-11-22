@@ -1,0 +1,9 @@
+@mixin font($fs, $lh: $fs + 2px) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin img($img) {
+  background-image: url("../img/#{$img}");
+  background-repeat: no-repeat;
+}

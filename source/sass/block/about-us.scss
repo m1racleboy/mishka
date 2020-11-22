@@ -1,0 +1,14 @@
+.about-us {
+  outline: 5px brown solid;
+  margin-bottom: 58px;
+}
+
+.about-us__title {
+  @include font(25px, 30px);
+  font-weight: 700;
+}
+
+.about-us__item {
+  @include font(17px, 20px);
+  font-weight: 700;
+}

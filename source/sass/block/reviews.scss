@@ -1,0 +1,24 @@
+.reviews {
+  outline: 5px blue solid;
+  margin-bottom: 38px;
+}
+
+.reviews__title {
+  @include font(25px, 30px);
+  font-weight: 700;
+}
+
+.reviews__description {
+  @include font(15px, 30px);
+  color: $grey-dark;
+}
+
+.reviews__author-name {
+  @include font(17px, 24px);
+  font-weight: 700;
+}
+
+.reviews__author-contact {
+  @include font(17px, 24px);
+  color: $grey-dark;
+}

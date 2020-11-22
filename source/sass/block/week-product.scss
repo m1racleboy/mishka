@@ -1,0 +1,30 @@
+.week-product {
+  outline: 5px aqua solid;
+  margin-bottom: 31px;
+  color: $grey-dark;
+}
+
+.week-product__title {
+  @include font(25px, 30px);
+  font-weight: 700;
+}
+
+.week-product__legend {
+  @include font(17px, 20px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $aqua-green;
+}
+
+.week-product__description {
+  @include font(15px, 24px);
+}
+
+.week-product__characteristic {
+  @include font(15px, 20px);
+}
+
+.week-product__price {
+  @include font(17px, 24px);
+  font-weight: 700;
+}

@@ -1,0 +1,29 @@
+.main-header {
+  outline: 5px green solid;
+  margin-bottom: 31px;
+  background-color: $grey-light;
+}
+
+.main-header__title {
+  @include font(27px, 30px);
+  font-weight: 700;
+  margin: 0;
+}
+
+.main-header__item {
+  padding: 24px 0 31px;
+}
+
+.main-header__item-interior {
+  background-color: $aqua-green;
+}
+
+.main-header__item-toy {
+  background-color: $turquoise;
+}
+
+.main-header__link {
+  @include font(19px, 24px);
+  font-weight: 700;
+  color: $white;
+}

@@ -1,0 +1,18 @@
+.contacts {
+  outline: 5px yellow solid;
+  margin-bottom: 39px;
+}
+
+.contacts__title {
+  @include font(18px, 30px);
+  font-weight: 700;
+}
+
+.contacts__information {
+  @include font(14px, 20px);
+  color: $grey-dark;
+}
+
+.contacts__link {
+  color: $grey-dark;
+}

@@ -18,13 +18,13 @@
             <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html">Вязание на заказ</a>
+            <a href="blank.html" target="_blank">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html">Поиск по сайту</a>
+            <a href="blank.html" target="_blank">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html">Корзина: пока пуста</a>
+            <a href="blank.html" target="_blank">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -96,16 +96,16 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters__fieldset filters__phone">
-            <legend class="filters__title">Тел</legend>
-            <input type="number" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <fieldset class="filters__fieldset filters__contacts">
+            <legend class="visually-hidden">Ваши контакты</legend>
+            <label class="filters__title">Тел</label>
+            <input type="tel" name="phone" inputmode="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <label class="filters__title">e-mail</label>
+            <input type="email" name="email" inputmode="email" placeholder="Ваш Email*" required>
+            <fieldset class="filters__fieldset filters__info">
           </fieldset>
-          <fieldset class="filters__fieldset filters__email">
-            <legend class="filters__title">e-mail</legend>
-            <input type="email" name="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="filters__fieldset filters__info">
             <legend class="filters__title">Доп</legend>
+            <label class="visually-hidden">Дополнительное</label>
             <textarea name="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <p class="filters__legend">*Поля обязательны для заполнения</p>
@@ -117,9 +117,9 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social__list">
-          <li class="footer-social__item"><a href="blank.html"><img src="#" alt="Иконка инстаграма"></a></li>
-          <li class="footer-social__item"><a href="blank.html"><img src="#" alt="Иконка фейсбука"></a></li>
-          <li class="footer-social__item"><a href="blank.html"><img src="#" alt="Иконка твиттера"></a></li>
+          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка инстаграма"></a></li>
+          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка фейсбука"></a></li>
+          <li class="footer-social__item"><a href="blank.html" target="_blank"><img src="#" alt="Иконка твиттера"></a></li>
         </ul>
       </section>
       <p class="page-footer__copyright">
