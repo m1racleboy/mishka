@@ -1,9 +1,6 @@
-@mixin font($ff, $fs, $fst, $lh, $fw) {
-  font-family: $ff, "Arial", sans-serif;
+@mixin font($fs, $lh: $fs + 2px) {
   font-size: $fs;
-  font-style: $fst;
   line-height: $lh;
-  font-weight: $fw;
 }
 
 @mixin img($img) {

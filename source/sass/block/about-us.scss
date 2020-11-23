@@ -4,9 +4,11 @@
 }
 
 .about-us__title {
-  @include font("Open Sans bold", 25px, normal, 30px, 700);
+  @include font(25px, 30px);
+  font-weight: 700;
 }
 
 .about-us__item {
-  @include font("Open Sans bold", 17px, normal, 20px, 700);
+  @include font(17px, 20px);
+  font-weight: 700;
 }

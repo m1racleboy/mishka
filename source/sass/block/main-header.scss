@@ -4,34 +4,32 @@
 }
 
 .main-header__title {
-  @include font("Open Sans bold", 27px, normal, 30px, 700);
+  @include font(27px, 30px);
+  font-weight: 700;
   margin: 0;
   background-color: $grey-light;
 }
 
 .main-header__description {
-  @include font("Open Sans", 13px, normal, 24px, normal);
+  @include font(14px, 24px);
   color: $grey-dark;
 }
 
-.main-header__list {
-  padding: 0;
-  margin: 0 auto;
-}
-
 .main-header__item {
-  padding: 24px 0 31px;
+  padding-top: 24px;
+  padding-bottom: 31px;
 }
 
 .main-header__item-interior {
-  background-color: #63d1bb;
+  background-color: $aqua-green;
 }
 
 .main-header__item-toy {
-  background-color: #56c3b2;
+  background-color: $turquoise;
 }
 
 .main-header__link {
-  @include font("Open Sans bold", 19px, normal, 24px, 700);
-  color: #ffffff;
+  @include font(19px, 24px);
+  font-weight: 700;
+  color: $white;
 }
