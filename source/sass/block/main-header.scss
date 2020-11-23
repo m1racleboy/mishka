@@ -1,17 +1,23 @@
 .main-header {
   outline: 5px green solid;
   margin-bottom: 31px;
-  background-color: $grey-light;
 }
 
 .main-header__title {
   @include font(27px, 30px);
   font-weight: 700;
   margin: 0;
+  background-color: $grey-light;
+}
+
+.main-header__description {
+  @include font(14px, 24px);
+  color: $grey-dark;
 }
 
 .main-header__item {
-  padding: 24px 0 31px;
+  padding-top: 24px;
+  padding-bottom: 31px;
 }
 
 .main-header__item-interior {

@@ -1,0 +1,35 @@
+.filters {
+  outline: 5px red solid;
+  margin-bottom: 55px;
+}
+
+.filters__fieldset {
+  outline: 5px aqua solid;
+  margin: 34px 0;
+  border: none;
+}
+
+.filters__title {
+  @include font(17px);
+  text-transform: uppercase;
+  color: $aqua-green;
+}
+
+.filters__type-item,
+.filters__color-item,
+.filters__name-item {
+  @include font(17px);
+}
+
+.filters__name-item > input[type="text"]::placeholder,
+.filters__title + input::placeholder,
+.filters__info > textarea::placeholder {
+  @include font(17px);
+  color: $black;
+  opacity: 30%;
+}
+
+.filters__legend {
+  @include font(14px);
+  color: $grey-dark;
+}
