@@ -1,0 +1,9 @@
+.page-main__title {
+  @include font(27px, 30px);
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-main__wrapper {
+  background-color: $grey-light;
+}

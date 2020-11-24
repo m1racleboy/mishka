@@ -4,47 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - каталог товаров</title>
-  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <div class="container">
-    <header class="page-header">
-      <a href="index.html" class="page-header__logo link">
-        <img src="#" alt="Логотип - Мишка" />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list list">
-          <li class="site-list__item">
-            <a class="site-list__link link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link link" href="blank.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link link" href="blank.html">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link link" href="blank.html">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <header class="page-header container">
+    <a href="index.html" class="page-header__logo link">
+      <img src="#" alt="Логотип - Мишка" />
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list list">
+        <li class="site-list__item">
+          <a class="site-list__link link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link link" href="blank.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link link" href="blank.html">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link link" href="blank.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main class="page-main">
-    <h1 class="page-main__title">
+    <div class="page-main__wrapper">
       <div class="container">
-        Каталог товаров
+        <h1 class="page-main__title">Каталог товаров</h1>
       </div>
-    </h1>
+    </div>
     <div class="container">
       <section class="products">
         <h2 class="visually-hidden">Вязаные игрушки</h2>
-        <ul class="products__list">
+        <ul class="products__list list">
           <li class="products__item">
             <img src="#" alt="Игрушка зайчик попрыгайчик компании Мишка">
             <h2 class="products__title">Зайчик попрыгайчик</h2>
@@ -76,7 +73,7 @@
         </div>
         <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
           о том, как появляются наши товары.</p>
-        <a href="form.html" class="production-process__button">Сделать заказ</a>
+        <a href="form.html" class="production-process__button link">Сделать заказ</a>
       </section>
     </div>
   </main>

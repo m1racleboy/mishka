@@ -1,16 +1,15 @@
 .filters {
-  outline: 5px red solid;
   margin-bottom: 55px;
 }
 
 .filters__fieldset {
-  outline: 5px aqua solid;
   margin: 34px 0;
   border: none;
 }
 
 .filters__title {
   @include font(17px);
+  font-weight: 700;
   text-transform: uppercase;
   color: $aqua-green;
 }

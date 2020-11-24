@@ -1,5 +1,4 @@
 .main-header {
-  outline: 5px green solid;
   margin-bottom: 31px;
 }
 
@@ -7,7 +6,11 @@
   @include font(27px, 30px);
   font-weight: 700;
   margin: 0;
-  background-color: $grey-light;
+}
+
+.main-header__img {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-header__description {
