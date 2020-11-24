@@ -28,6 +28,11 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .button {
   font-weight: 700;
   text-transform: uppercase;
