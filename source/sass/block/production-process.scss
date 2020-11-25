@@ -1,0 +1,21 @@
+.production-process {
+  margin-bottom: 91px;
+}
+
+.production-process__title {
+  @include font(17px, 24px);
+  font-weight: 700;
+}
+
+.production-process__description {
+  @include font(13px, 24px);
+  color: $grey-dark;
+}
+
+.production-process__button {
+  @include font(18px, 20px);
+  font-weight: 700;
+  color: $grey-dark;
+  padding: 0 18px;
+  text-transform: uppercase;
+}

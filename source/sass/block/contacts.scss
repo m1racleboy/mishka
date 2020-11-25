@@ -1,5 +1,4 @@
 .contacts {
-  outline: 5px yellow solid;
   margin-bottom: 39px;
 }
 
@@ -15,4 +14,9 @@
 
 .contacts__link {
   color: $grey-dark;
+}
+
+.contacts__img-map {
+  display: block;
+  margin: 0 auto;
 }

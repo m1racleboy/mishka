@@ -1,0 +1,18 @@
+.products {
+  margin-bottom: 30px;
+}
+
+.products__title {
+  @include font(17px, 24px);
+  font-weight: 700;
+}
+
+.products__description {
+  @include font(13px, 30px);
+  color: $grey-dark;
+}
+
+.products__price {
+  @include font(15px, 24px);
+  font-weight: 700;
+}

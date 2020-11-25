@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixin.scss";
+@import "global/normalize.scss";
 @import "global/common.scss";
 // block
 @import "block/page.scss";
@@ -12,4 +13,7 @@
 @import "block/reviews.scss";
 @import "block/contacts.scss";
 @import "block/page-footer.scss";
+@import "block/page-main.scss";
 @import "block/filters.scss";
+@import "block/products.scss";
+@import "block/production-process.scss";
