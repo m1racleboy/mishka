@@ -48,15 +48,11 @@
       <img class="main-header__img" src="img/mishka-home-mobile.png" alt="Дом с милыми игрушками компании Мишка"
         width="320" height="373" />
       <ul class="main-header__list list">
-        <li class="main-header__item main-header__item-interior">
-          <div class="container">
+        <li class="main-header__item main-header__item-interior container">
             <a class="main-header__link link" href="blank.html">Предметы интерьера</a>
-          </div>
         </li>
-        <li class="main-header__item main-header__item-toy">
-          <div class="container">
+        <li class="main-header__item main-header__item-toy container">
             <a class="main-header__link link" href="blank.html">Детские игрушки</a>
-          </div>
         </li>
       </ul>
     </section>
@@ -153,39 +149,34 @@
         <button type="submit" class="reviews__button button">Написать</button>
       </div>
     </section>
-    <section class="contacts">
-      <div class="container">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__information">
-          <div class="contacts__wrapper">
-            <dt class="contacts__term">e-mail:</dt>
-            <dd class="contacts__definition contacts__definition--active">
-              <a class="contacts__link link" href="https://info@mimimishkashop.ru"
-                target="_blank">info@mimimishkashop.ru</a>
-            </dd>
-          </div>
-          <div class="contacts__wrapper">
-            <dt class="contacts__term">адрес:</dt>
-            <dd class="contacts__definition">
-              <address class="address">
-                г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
-              </address>
-            </dd>
-          </div>
-        </dl>
+    <section class="contacts container">
+      <h2 class="contacts__title">Контакты</h2>
+      <dl class="contacts__information">
+        <div class="contacts__wrapper">
+          <dt class="contacts__term">e-mail:</dt>
+          <dd class="contacts__definition contacts__definition--active">
+            <a class="contacts__link link" href="https://info@mimimishkashop.ru"
+              target="_blank">info@mimimishkashop.ru</a>
+          </dd>
+        </div>
+        <div class="contacts__wrapper">
+          <dt class="contacts__term">адрес:</dt>
+          <dd class="contacts__definition">
+            <address class="address">
+              г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
+            </address>
+          </dd>
+        </div>
+      </dl>
+      <div class="contacts__map-wrapper">
+        <!-- will be iframe -->
       </div>
-      <img class="contacts__img-map" src="img/map-mobile.jpg"
-        alt="Офис компании по адресу: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" width="320"
-        height="454" />
-      <div class="container contacts__button-wrapper">
-        <button type="button" class="contacts__button button">
-          Напишите нам
-        </button>
-      </div>
+      <button type="button" class="contacts__button button">
+        Напишите нам
+      </button>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container page-footer__wrapper">
+  <footer class="page-footer container">
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <a class="page-footer__logo link" href="index.html">
@@ -267,7 +258,6 @@
           </svg>
         </a>
       </p>
-    </div>
   </footer>
 </body>
 

@@ -27,9 +27,9 @@
   color: $grey-dark;
 }
 
-.contacts__img-map {
-  display: block;
-  margin: 0 auto;
+.contacts__map-wrapper {
+  @include img("map-mobile.jpg", 320px, 455px);
+  margin: 0 -30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,5 +41,30 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+  .contacts {
+    display: grid;
+    grid-template:
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "c c c c b b b b";
+  }
+
+  .contacts__title,
+  .contacts__information {
+    grid-area: a;
+  }
+
+  .contacts__information {
+    margin-top: 50px;
+  }
+
+  .contacts__map-wrapper {
+    grid-area: b;
+  }
+
+  .contacts__button {
+    grid-area: c;
+    margin-top: auto;
+  }
 }
