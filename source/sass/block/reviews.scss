@@ -14,10 +14,82 @@
 
 .reviews__author-name {
   @include font(17px, 24px);
+  font-style: normal;
   font-weight: 700;
 }
 
 .reviews__author-contact {
   @include font(17px, 24px);
+  font-style: normal;
   color: $grey-dark;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--current {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    order: -2;
+  }
+
+  .reviews__button {
+    order: -1;
+  }
+
+  .reviews__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__toggles {
+    display: flex;
+  }
+
+  .reviews__author {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    order: -2;
+  }
+
+  .reviews__button {
+    order: -1;
+  }
+
+  .reviews__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__toggles {
+    display: flex;
+  }
+
+  .reviews__author {
+    display: flex;
+    flex-direction: column;
+  }
 }

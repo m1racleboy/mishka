@@ -7,3 +7,62 @@
   @include font(19px, 21px);
   font-weight: 700;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+.footer-social__list {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 365px;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 555px;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}
