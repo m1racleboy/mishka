@@ -44,6 +44,10 @@
     width: 668px;
     margin: 0 auto;
   }
+
+  .main-header__item {
+    width: calc(var(--content-area) / 2);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -51,5 +55,9 @@
     display: flex;
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .main-header__item {
+    width: calc(var(--content-area) / 2);
   }
 }

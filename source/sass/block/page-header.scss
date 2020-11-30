@@ -45,12 +45,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .container {
-    width: 768px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-
   .site-list,
   .user-list {
     display: flex;
@@ -86,12 +80,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    width: 1150px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-
   .main-nav__list {
     display: flex;
     flex-direction: row;
