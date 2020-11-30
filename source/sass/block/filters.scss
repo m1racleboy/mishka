@@ -20,9 +20,14 @@
   @include font(17px);
 }
 
+.filters__name-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .filters__name-item > input[type="text"]::placeholder,
 .filters__title + input::placeholder,
-.filters__info > textarea::placeholder {
+.filters__textarea::placeholder {
   @include font(17px);
   color: $black;
   opacity: 30%;
@@ -31,4 +36,55 @@
 .filters__legend {
   @include font(14px);
   color: $grey-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .filters__color,
+  .filters__contacts {
+    background-color: $grey-light;
+  }
+
+  .filters__fieldset {
+    display: flex;
+  }
+
+  .filters__title {
+    margin-right: 100px;
+  }
+
+  .filters__color-list {
+    display: grid;
+    grid-template:
+      "a b"
+      "a b"
+      "a b";
+  }
+
+  .filters__name-item {
+    flex-direction: row;
+  }
+
+  .filters__contacts-wrapper {
+    flex-direction: column;
+  }
+
+  .filters__contacts-phone,
+  .filters__contacts-email {
+    display: flex;
+  }
+
+  .filters__wrapper-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filters__color-list {
+    display: grid;
+    grid-template:
+      "a b c"
+      "a b c";
+  }
 }
