@@ -1,0 +1,24 @@
+.footer-social__list {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 365px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 555px;
+  }
+}
