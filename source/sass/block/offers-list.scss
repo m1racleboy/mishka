@@ -2,7 +2,11 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }
 
@@ -11,11 +15,4 @@
   font-weight: 700;
   padding-top: 29px;
   padding-bottom: 26px;
-}
-
-@media (min-width: $desktop-width) {
-  .offers-list {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
 }
