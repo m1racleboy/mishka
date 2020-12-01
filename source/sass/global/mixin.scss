@@ -3,7 +3,8 @@
   line-height: $lh;
 }
 
-@mixin img($img) {
+@mixin bg-img($img, $y: 0, $x: 0) {
   background-image: url("../img/#{$img}");
   background-repeat: no-repeat;
+  background-position: $y $x;
 }

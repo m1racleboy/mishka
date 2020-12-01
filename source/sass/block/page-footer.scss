@@ -7,3 +7,41 @@
   @include font(19px, 21px);
   font-weight: 700;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}

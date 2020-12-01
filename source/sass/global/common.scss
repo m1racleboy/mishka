@@ -1,3 +1,18 @@
+:root {
+  --content-area: 320px;
+  --content-area-padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    --content-area: 768px;
+    --content-area-padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --content-area: 1150px;
+    --content-area-padding: 50px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -29,12 +44,11 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 calc(50% - var(--content-area) / 2 + var(--content-area-padding));
 }
 
 .button {
+  display: block;
   font-weight: 700;
   text-transform: uppercase;
   color: $grey-dark;
@@ -42,6 +56,8 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 2px solid $grey-dark;
   box-sizing: border-box;
+  margin: 0 auto;
+  height: fit-content;
 }
 
 .list {
@@ -54,11 +70,12 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: $black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 60%;
   }
 
-  &:focus {
+  &:active {
     opacity: 30%;
   }
 }

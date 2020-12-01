@@ -1,5 +1,6 @@
 .main-header {
   margin-bottom: 31px;
+  background-color: $grey-light;
 }
 
 .main-header__title {
@@ -35,4 +36,28 @@
   @include font(19px, 24px);
   font-weight: 700;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__list {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .main-header__item {
+    width: calc(var(--content-area) / 2);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__list {
+    display: flex;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .main-header__item {
+    width: calc(var(--content-area) / 2);
+  }
 }

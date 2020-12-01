@@ -6,6 +6,7 @@
 .week-product__title {
   @include font(25px, 30px);
   font-weight: 700;
+  color: $black;
 }
 
 .week-product__legend {
@@ -26,4 +27,52 @@
 .week-product__price {
   @include font(17px, 24px);
   font-weight: 700;
+}
+
+.week-product__characteristic-wrapper {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .week-product__wrapper-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .week-product__wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    padding-right: 376px;
+    position: relative;
+  }
+
+  .week-product__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-product__wrapper-top {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .week-product__legend {
+    order: -1;
+  }
+
+  .week-product__wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    padding-right: 583px;
+    position: relative;
+  }
+
+  .week-product__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
