@@ -1,0 +1,31 @@
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 88px 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    display: grid;
+    grid-template-columns: 410px 290px 350px;
+    grid-template-rows: 88px 65px;
+  }
+}

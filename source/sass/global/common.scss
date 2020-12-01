@@ -45,14 +45,6 @@ input[type="radio"].visually-hidden {
 
 .container {
   padding: 0 calc(50% - var(--content-area) / 2 + var(--content-area-padding));
-
-  @media (min-width: $tablet-width) {
-    padding: 0 calc(50% - var(--content-area) / 2 + var(--content-area-padding));
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 calc(50% - var(--content-area) / 2 + var(--content-area-padding));
-  }
 }
 
 .button {
