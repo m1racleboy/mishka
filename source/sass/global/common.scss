@@ -56,7 +56,6 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 2px solid $grey-dark;
   box-sizing: border-box;
-  margin: 0 auto;
   height: fit-content;
 }
 
@@ -69,6 +68,7 @@ input[type="radio"].visually-hidden {
 .link {
   text-decoration: none;
   color: $black;
+  transition: 0.2s;
 
   &:hover,
   &:focus {
