@@ -30,7 +30,6 @@
 .filters__textarea::placeholder {
   @include font(17px);
   color: $black;
-  transition: 0.2s;
   opacity: 30%;
 }
 
