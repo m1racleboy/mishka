@@ -16,3 +16,30 @@
   @include font(15px, 24px);
   font-weight: 700;
 }
+
+.products__buy-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .products__item {
+    display: flex;
+  }
+
+  .products__item-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .products__item {
+    flex-direction: column;
+  }
+}

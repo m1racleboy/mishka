@@ -1,5 +1,15 @@
 .production-process {
   margin-bottom: 91px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template:
+      "a a b"
+      "a a b"
+      "a a b";
+  }
 }
 
 .production-process__title {
@@ -18,4 +28,17 @@
   color: $grey-dark;
   padding: 0 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .production-process__video-wrapper {
+    order: -1;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .production-process__video-wrapper {
+    grid-area: a;
+  }
 }
