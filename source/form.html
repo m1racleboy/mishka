@@ -34,16 +34,20 @@
         </li>
       </ul>
       <ul class="main-nav__list offers-list list">
-        <li class="offers-list__item"><a class="offers-link link" href="blank.html">Новые поступления</a></li>
-        <li class="offers-list__item"><a class="offers-link link" href="blank.html">Распродажа</a></li>
+        <li class="offers-list__item">
+          <a class="offers-link link" href="blank.html">Новые поступления</a>
+        </li>
+        <li class="offers-list__item">
+          <a class="offers-link link" href="blank.html">Распродажа</a>
+        </li>
       </ul>
       <p class="page-header__legend">Бесплатная доставка по России</p>
     </nav>
   </header>
   <main class="page-main">
-    <div class="container page-main__title-wrapper">
+    <header class="container page-main__title-wrapper">
       <h1 class="page-main__title">Вязание на заказ</h1>
-    </div>
+    </header>
     <div class="container">
       <p class="page-main__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
@@ -129,10 +133,10 @@
           </div>
         </fieldset>
         <fieldset class="filters__fieldset filters__info container">
+          <legend class="visually-hidden">Дополнительное</legend>
           <h3 class="filters__title">Доп</h3>
-          <label class="visually-hidden">Дополнительное</label>
           <textarea class="filters__textarea" name="additional-information"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            placeholder="Опишите все ваши пожелания к заказу" aria-label="Пожелания к заказку"></textarea>
         </fieldset>
         <div class="container filters__wrapper-bottom">
           <p class="filters__legend">*Поля обязательны для заполнения</p>
