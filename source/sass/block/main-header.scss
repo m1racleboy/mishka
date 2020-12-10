@@ -2,13 +2,17 @@
   @include bg-img("mishka-home-mobile.png", 50%);
   margin-bottom: 31px;
   background-color: $grey-light;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: -18px;
+  }
 }
 
 .main-header__title {
   @include font(27px, 30px);
   font-weight: 700;
   text-align: center;
-  padding-top: 72px;
+  padding-top: 90px;
   padding-bottom: 120px;
 }
 

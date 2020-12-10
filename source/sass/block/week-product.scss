@@ -35,7 +35,7 @@
 
 .week-product__characteristic {
   @include font(15px, 20px);
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .week-product__price {
@@ -47,11 +47,11 @@
 
 .week-product__characteristic-wrapper {
   display: flex;
-  padding-bottom: 4px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   &:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 }
 
@@ -65,7 +65,7 @@
 }
 
 .week-product__img {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .week-product__button {

@@ -18,6 +18,10 @@
   margin-bottom: 14px;
 }
 
+.reviews__content {
+  margin: 0;
+}
+
 .reviews__description {
   @include font(15px, 30px);
   color: $grey-dark;
@@ -53,7 +57,7 @@
 
 .reviews__toggles {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 37px;
 }
 
 .reviews-toggle {
