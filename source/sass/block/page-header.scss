@@ -3,6 +3,18 @@
   flex-direction: column;
 }
 
+.page-header__logo img {
+  width: 86px;
+  height: 79px;
+}
+
+.page-header__logo {
+  display: block;
+  width: 86px;
+  height: 79px;
+  margin: 0 auto;
+}
+
 .page-header__legend {
   @include font(15px, 24px);
   display: none;

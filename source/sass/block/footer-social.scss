@@ -1,8 +1,18 @@
+.footer-social {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .footer-social__list {
   display: flex;
   width: 140px;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 25px;
+    margin-bottom: 22px;
+  }
 }
 
 @media (min-width: $tablet-width) {

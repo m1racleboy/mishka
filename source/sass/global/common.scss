@@ -52,11 +52,23 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-transform: uppercase;
   color: $grey-dark;
-  padding: 16px 0;
+  padding: 14px 0;
   background-color: transparent;
   border: 2px solid $grey-dark;
   box-sizing: border-box;
   height: fit-content;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: $grey-dark;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $grey-dark;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .list {
@@ -78,4 +90,14 @@ input[type="radio"].visually-hidden {
   &:active {
     opacity: 30%;
   }
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
 }

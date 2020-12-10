@@ -5,6 +5,7 @@
 .contacts__title {
   @include font(18px, 30px);
   font-weight: 700;
+  margin-bottom: 32px;
 }
 
 .contacts__information {
@@ -12,22 +13,41 @@
   display: flex;
   flex-direction: column;
   color: $grey-dark;
+  margin-bottom: 48px;
 }
 
 .contacts__wrapper {
   display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 39px;
+  }
+}
+
+.contacts__term {
+  width: 77px;
 }
 
 .contacts__definition {
-  margin-left: 20px;
+  margin: 0;
 }
 
 .contacts__address {
   font-style: normal;
+  line-height: 30px;
+  margin-top: -5px;
 }
 
 .contacts__link {
   color: $grey-dark;
+  display: block;
+  width: 179px;
+  border-bottom: 1px solid $green-border;
+}
+
+.contacts__button {
+  margin-top: 41px;
+  width: 260px;
 }
 
 .contacts__map-wrapper {

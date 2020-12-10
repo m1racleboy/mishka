@@ -3,6 +3,22 @@
   width: 100%;
 }
 
+.page-footer__copyright {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 29px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-footer__button {
+  margin-top: -7px;
+}
+
 .page-footer__copyright-span {
   @include font(19px, 21px);
   font-weight: 700;

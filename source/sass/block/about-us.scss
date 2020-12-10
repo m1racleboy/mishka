@@ -5,11 +5,54 @@
 .about-us__title {
   @include font(25px, 30px);
   font-weight: 700;
+  margin-bottom: 82px;
 }
 
 .about-us__item {
   @include font(17px, 20px);
   font-weight: 700;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 83px;
+  }
+}
+
+.about-us__svg:first-child {
+  position: absolute;
+  top: -54px;
+  left: 8px;
+}
+
+.about-us__item:nth-child(2) .about-us__svg {
+  position: absolute;
+  top: -53px;
+  left: 0;
+}
+
+.about-us__item:nth-child(3) .about-us__svg {
+  position: absolute;
+  top: -48px;
+  left: 7px;
+}
+
+.about-us__item:nth-child(4) .about-us__svg {
+  position: absolute;
+  top: -51px;
+  left: 3px;
+}
+
+.about-us__item:nth-child(5) .about-us__svg {
+  position: absolute;
+  top: -50px;
+  left: -6px;
+}
+
+
+.about-us__item:last-child .about-us__svg {
+  position: absolute;
+  top: -52px;
+  left: 3px;
 }
 
 @media (min-width: $tablet-width) {
