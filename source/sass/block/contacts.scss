@@ -51,17 +51,55 @@
 }
 
 .contacts__map-wrapper {
-  @include bg-img("map-mobile.jpg");
-  margin: 0 -30px;
-  width: 320px;
-  height: 455px;
+  @media (max-width: $mobile-width-only) {
+    @include bg-img("map-mobile.jpg");
+    margin: 0 -30px;
+    width: 320px;
+    height: 455px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include bg-img("map-tablet.jpg");
+    margin: 0 -50px;
+    width: 768px;
+    height: 457px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__title {
+    @include font(43px, 50px);
+    margin-bottom: 49px;
+    position: relative;
+
+    &::after {
+      @include bg-img("contacts-flag.svg");
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      right: 3px;
+      bottom: -8px;
+    }
+  }
+
   .contacts__information {
+    @include font(17px, 30px);
     display: grid;
     grid-template-columns: 293px 335px;
     grid-column-gap: 40px;
+    margin-bottom: 48px;
+  }
+
+  .contacts__address {
+    margin-top: 0;
+  }
+
+  .contacts__button {
+    margin: 0 auto;
+    width: 230px;
+    margin-top: 55px;
+    margin-bottom: 57px;
   }
 }
 

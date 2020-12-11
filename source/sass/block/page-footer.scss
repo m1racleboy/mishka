@@ -17,6 +17,10 @@
 
 .page-footer__button {
   margin-top: -7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright-span {
@@ -37,11 +41,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 56px;
   }
 
   .page-footer__copyright {
     display: flex;
     align-items: center;
+    margin: 0;
   }
 }
 

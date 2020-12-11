@@ -1,5 +1,9 @@
 .about-us {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .about-us__title {
@@ -30,12 +34,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us__title {
+    @include font(43px, 50px);
+    margin-bottom: 42px;
+  }
+
+  .about-us__item {
+    @include font(20px);
+  }
+
   .about-us__list {
     display: grid;
-    grid-template-columns: 230px 328px;
+    grid-template-columns: 240px 328px;
     grid-template-rows: min-content min-content min-content;
-    grid-column-gap: 110px;
-    grid-row-gap: 60px;
+    grid-column-gap: 95px;
+    grid-row-gap: 27px;
   }
 
   .about-us__item:nth-child(2) {

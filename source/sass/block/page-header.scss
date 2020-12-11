@@ -21,7 +21,8 @@
   color: $grey-dark;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    margin: auto 0;
   }
 
   @media (min-width: $desktop-width) {

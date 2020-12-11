@@ -17,6 +17,12 @@
   font-weight: 700;
   padding-top: 28px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include font(15px, 24px);
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -27,5 +33,11 @@
   .site-list__item {
     margin: 0 -30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.site-list__item-form {
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
   }
 }
