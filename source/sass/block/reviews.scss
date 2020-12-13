@@ -12,7 +12,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include bg-img("review.png");
     margin-bottom: 69px;
     padding-top: 84px;
     padding-bottom: 102px;
@@ -24,6 +23,28 @@
       width: 100%;
       height: 17px;
       bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.reviews > div {
+  position: relative;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      @include bg-img("review.png");
+      position: absolute;
+      content: "";
+      width: 350px;
+      height: 457px;
+      top: -84px;
+      margin-left: -50px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
     }
   }
 }

@@ -25,7 +25,7 @@
 }
 
 .contacts__term {
-  width: 77px;
+  width: 78px;
 }
 
 .contacts__definition {
@@ -43,6 +43,11 @@
   display: block;
   width: 179px;
   border-bottom: 1px solid $green-border;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px);
+    width: 204px;
+  }
 }
 
 .contacts__button {
