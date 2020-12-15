@@ -1,7 +1,7 @@
 .main-header {
   @include bg-img("mishka-home-mobile.png", 50%);
   margin-bottom: 31px;
-  background-color: $grey-light;
+  background-color: $grey-bg;
 
   @media (max-width: $mobile-width-only) {
     margin-top: -18px;
@@ -9,7 +9,8 @@
 
   @media (min-width: $tablet-width) {
     @include bg-img("hero-tablet.png", 50%);
-    margin-top: -65px;
+    margin-top: -82px;
+    padding-top: 82px;
 
     &::after {
       @include bg-img("zigzag-tablet.svg", 50%);
@@ -21,8 +22,9 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     @include bg-img("hero-desktop.png", 50%);
+    margin-bottom: 109px;
 
     &::after {
       @include bg-img("zigzag-desktop.svg", 50%);
@@ -30,7 +32,7 @@
       content: "";
       width: 100%;
       height: 34px;
-      margin-top: -17px;
+      margin-top: -22px;
     }
   }
 }
@@ -44,14 +46,14 @@
 
   @media (min-width: $tablet-width) {
     @include font(43px, 50px);
-    padding-top: 156px;
+    padding-top: 74px;
     padding-bottom: 371px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(53px, 57px);
-    padding-top: 156px;
-    padding-bottom: 371px;
+    padding-top: 76px;
+    padding-bottom: 355px;
   }
 }
 
@@ -107,6 +109,10 @@
     left: 223px;
   }
 
+  @media (min-width: $desktop-width) {
+    left: 413px;
+  }
+
   &:hover,
   &:focus {
     opacity: 30%;
@@ -130,6 +136,10 @@
   @media (min-width: $tablet-width) {
     top: 8px;
     left: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 396px;
   }
 
   &:hover,

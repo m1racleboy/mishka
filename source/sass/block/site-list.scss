@@ -22,26 +22,61 @@
     @include font(15px, 24px);
     display: flex;
     align-items: center;
+    padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(17px, 24px);
+    padding-top: 28px;
   }
 }
 
 @media (max-width: $mobile-width-only) {
-  .site-list__link {
-    padding-left: 76px;
+  .site-list__item {
+    margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .site-list__item {
-    margin: 0 -30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .site-list__link {
+    width: 260px;
+    padding-left: 46px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
   }
 }
 
 .site-list__item-form {
   @media (min-width: $tablet-width) {
     margin-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
+  }
+}
+
+.site-list__item-catalog {
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+  .site-list {
+    position: absolute;
+    top: 100%;
+  }
+
+  .site-list__item {
+    @include font(15px, 24px);
+    font-weight: 700;
+    padding: 22px 1px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 }

@@ -2,6 +2,8 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 100%;
     display: flex;
     justify-content: space-between;
     grid-column: 1/2;
@@ -12,6 +14,6 @@
 .offers-list__item {
   @include font(15px, 24px);
   font-weight: 700;
-  padding-top: 29px;
-  padding-bottom: 26px;
+  padding: 20px 1px;
+  margin-right: 60px;
 }

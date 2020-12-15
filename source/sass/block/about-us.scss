@@ -4,6 +4,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 225px;
+    margin-bottom: 58px;
+  }
 }
 
 .about-us__title {
@@ -63,12 +68,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us__title {
+    @include font(53px, 57px);
+    margin-bottom: 40px;
+  }
+
   .about-us__list {
     display: grid;
-    grid-template-columns: 230px 328px;
+    grid-template-columns: 292px 328px;
     grid-template-rows: min-content min-content min-content;
-    grid-column-gap: 110px;
-    grid-row-gap: 60px;
+    grid-column-gap: 58px;
+    grid-row-gap: 27px;
   }
 
   .about-us__item:nth-child(2) {

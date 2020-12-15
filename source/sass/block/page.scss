@@ -4,11 +4,10 @@
 
 .page__body {
   @include font(18px);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-content: start;
   min-height: 100%;
-
-  grid-template-rows: min-content 1fr min-content;
 
   font-family: "Open Sans", "Arial", sans-serif;
   color: $black;
