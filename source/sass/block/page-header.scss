@@ -2,6 +2,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 81px;
+  }
 }
 
 .page-header__logo img {
@@ -14,6 +20,19 @@
   width: 86px;
   height: 79px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto 0;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }
 
 .page-header__legend {
@@ -23,38 +42,15 @@
   position: absolute;
   top: 100%;
   right: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 81px;
-  }
-
-  .page-header__logo {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin: auto 0;
-    margin-right: auto;
-  }
-
-  .page-header__legend {
+  @media (min-width: $tablet-width) {
     display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
     margin-top: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-    margin: auto;
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .page-header__legend {
+  @media (min-width: $desktop-width) {
     display: block;
     grid-column: 3/4;
     grid-row: 2/3;

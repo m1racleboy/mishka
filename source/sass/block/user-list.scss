@@ -18,11 +18,26 @@
   padding-top: 28px;
   padding-bottom: 26px;
 
+  @media (max-width: $mobile-width-only) {
+    margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
+  }
+}
+
+.user-list__link {
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-left: 46px;
   }
 }
 
@@ -35,31 +50,16 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .user-list__link {
-    width: 260px;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 auto;
-    padding-left: 46px;
+.user-list__item-cart {
+  @media (max-width: $mobile-width-only) {
+    background-color: $white;
   }
+}
 
-  .user-list__link-search {
-    position: relative;
+.user-list__link-cart {
+  position: relative;
 
-    &::before {
-      @include bg-img("search.svg");
-      position: absolute;
-      content: "";
-      width: 18px;
-      height: 18px;
-      left: 0;
-      top: 3px;
-    }
-  }
-
-  .user-list__link-cart {
-    position: relative;
+  @media (max-width: $mobile-width-only) {
     background-color: $white;
 
     &::before {
@@ -73,15 +73,7 @@
     }
   }
 
-  .user-list__item {
-    margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-}
-
-.user-list__item-cart {
   @media (min-width: $tablet-width) {
-    position: relative;
     padding-left: 53px;
 
     &::before {
@@ -90,7 +82,7 @@
       content: "";
       width: 21px;
       height: 18px;
-      top: 40%;
+      top: 3px;
       left: 1px;
     }
   }
@@ -101,8 +93,21 @@
 }
 
 .user-list__link-search {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      @include bg-img("search.svg");
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 18px;
+      left: 0;
+      top: 3px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    position: relative;
     padding: 44px 41px;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);

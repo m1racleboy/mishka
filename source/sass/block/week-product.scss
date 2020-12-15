@@ -47,6 +47,18 @@
   font-weight: 700;
   color: $black;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    @include font(43px, 50px);
+    margin-top: 17px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 57px);
+    margin-left: 30px;
+    margin-top: 18px;
+  }
 }
 
 .week-product__legend {
@@ -55,16 +67,48 @@
   text-transform: uppercase;
   color: $aqua-green;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    text-align: center;
+    margin-top: 22px;
+    margin-right: 13px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    margin-left: 32px;
+    margin-top: 26px;
+  }
 }
 
 .week-product__description {
   @include font(15px, 24px);
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px);
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+    margin-bottom: 44px;
+  }
 }
 
 .week-product__characteristic {
   @include font(15px, 20px);
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
 }
 
 .week-product__price {
@@ -72,6 +116,11 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 24px);
+    margin-bottom: 32px;
+  }
 }
 
 .week-product__characteristic-wrapper {
@@ -81,6 +130,14 @@
 
   &:not(:last-child) {
     margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -95,110 +152,44 @@
 
 .week-product__img {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .week-product__button {
   width: 260px;
-}
 
-@media (min-width: $tablet-width) {
-  .week-product__title {
-    @include font(43px, 50px);
-    margin-top: 17px;
-    margin-bottom: 36px;
-  }
-
-  .week-product__legend {
-    width: 100px;
-    text-align: center;
-    margin-top: 22px;
-    margin-right: 13px;
-    line-height: 17px;
-  }
-
-  .week-product__description {
-    @include font(17px, 30px);
-    margin-bottom: 33px;
-  }
-
-  .week-product__characteristic {
-    margin-bottom: 58px;
-  }
-
-  .week-product__price {
-    @include font(20px, 24px);
-    margin-bottom: 32px;
-  }
-
-  .week-product__button {
+  @media (min-width: $tablet-width) {
     width: 292px;
   }
+}
 
-  .week-product__wrapper-top {
+.week-product__wrapper-top {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
 
-  .week-product__wrapper-bottom {
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.week-product__wrapper-bottom {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding-right: 376px;
     position: relative;
   }
 
-  .week-product__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .week-product__title {
-    @include font(53px, 57px);
-    margin-left: 30px;
-    margin-top: 18px;
-  }
-
-  .week-product__wrapper-top {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .week-product__legend {
-    order: -1;
-    margin-left: 32px;
-    margin-top: 26px;
-  }
-
-  .week-product__wrapper-bottom {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $desktop-width) {
     padding-right: 583px;
     position: relative;
     margin-left: 175px;
-  }
-
-  .week-product__description {
-    width: 292px;
-    margin-bottom: 44px;
-  }
-
-  .week-product__characteristic-wrapper {
-    padding-bottom: 14px;
-  }
-
-  .week-product__characteristic-wrapper:not(:last-child) {
-    margin-bottom: 5px;
-  }
-
-  .week-product__characteristic {
-    margin-bottom: 110px;
-  }
-
-  .week-product__img {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }

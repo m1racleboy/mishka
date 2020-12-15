@@ -1,5 +1,24 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 410px 290px 350px;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__toggle {
@@ -91,26 +110,5 @@
 
   .main-nav--nojs .user-list__item {
     display: block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    min-height: 88px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .main-nav {
-    display: grid;
-    grid-template-columns: 410px 290px 350px;
   }
 }

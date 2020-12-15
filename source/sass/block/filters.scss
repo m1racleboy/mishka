@@ -14,6 +14,23 @@
   color: $aqua-green;
 }
 
+.filters__color-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template:
+      "a b"
+      "a b"
+      "a b";
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template:
+      "a b c"
+      "a b c";
+  }
+}
+
 .filters__type-item,
 .filters__color-item,
 .filters__name-item {
@@ -52,14 +69,6 @@
     margin-right: 100px;
   }
 
-  .filters__color-list {
-    display: grid;
-    grid-template:
-      "a b"
-      "a b"
-      "a b";
-  }
-
   .filters__name-item {
     flex-direction: row;
   }
@@ -77,14 +86,5 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .filters__color-list {
-    display: grid;
-    grid-template:
-      "a b c"
-      "a b c";
   }
 }

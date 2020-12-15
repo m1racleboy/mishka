@@ -15,6 +15,34 @@
   @include font(25px, 30px);
   font-weight: 700;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    @include font(43px, 50px);
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 57px);
+    margin-bottom: 40px;
+  }
+}
+
+.about-us__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 240px 328px;
+    grid-template-rows: min-content min-content min-content;
+    grid-column-gap: 95px;
+    grid-row-gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 292px 328px;
+    grid-template-rows: min-content min-content min-content;
+    grid-column-gap: 58px;
+    grid-row-gap: 27px;
+  }
 }
 
 .about-us__item {
@@ -24,6 +52,34 @@
 
   &:not(:last-child) {
     margin-bottom: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(20px);
+  }
+}
+
+.about-us__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.about-us__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 }
 
@@ -36,58 +92,4 @@
 
 .about-us__svg {
   margin: auto;
-}
-
-@media (min-width: $tablet-width) {
-  .about-us__title {
-    @include font(43px, 50px);
-    margin-bottom: 42px;
-  }
-
-  .about-us__item {
-    @include font(20px);
-  }
-
-  .about-us__list {
-    display: grid;
-    grid-template-columns: 240px 328px;
-    grid-template-rows: min-content min-content min-content;
-    grid-column-gap: 95px;
-    grid-row-gap: 27px;
-  }
-
-  .about-us__item:nth-child(2) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .about-us__item:nth-child(3) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .about-us__title {
-    @include font(53px, 57px);
-    margin-bottom: 40px;
-  }
-
-  .about-us__list {
-    display: grid;
-    grid-template-columns: 292px 328px;
-    grid-template-rows: min-content min-content min-content;
-    grid-column-gap: 58px;
-    grid-row-gap: 27px;
-  }
-
-  .about-us__item:nth-child(2) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .about-us__item:nth-child(3) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
 }
