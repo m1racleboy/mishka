@@ -1,7 +1,9 @@
 .page-main__title {
-  @include font(27px, 30px);
-  font-weight: 700;
   margin: 0;
+
+  font-weight: 700;
+
+  @include font(27px, 30px);
 }
 
 .page-main__title-wrapper {

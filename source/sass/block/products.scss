@@ -3,8 +3,9 @@
 }
 
 .products__title {
-  @include font(17px, 24px);
   font-weight: 700;
+
+  @include font(17px, 24px);
 }
 
 .products__list {
@@ -25,13 +26,15 @@
 }
 
 .products__description {
-  @include font(13px, 30px);
   color: $grey-dark;
+
+  @include font(13px, 30px);
 }
 
 .products__price {
-  @include font(15px, 24px);
   font-weight: 700;
+
+  @include font(15px, 24px);
 }
 
 .products__item-wrapper {

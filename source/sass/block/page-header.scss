@@ -1,12 +1,15 @@
 .page-header {
   position: relative;
+
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    border-bottom: $border;
+
     margin-bottom: 81px;
+
+    border-bottom: $border;
   }
 }
 
@@ -22,36 +25,43 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 1/2;
     margin: auto 0;
     margin-right: auto;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
     margin: auto;
+
     grid-column: 2/3;
     grid-row: 1/2;
   }
 }
 
 .page-header__legend {
-  @include font(15px, 24px);
-  display: none;
-  color: $grey-dark;
   position: absolute;
   top: 100%;
   right: 0;
 
+  display: none;
+
+  color: $grey-dark;
+
+  @include font(15px, 24px);
+
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 20px;
+
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+
     grid-column: 3/4;
     grid-row: 2/3;
   }

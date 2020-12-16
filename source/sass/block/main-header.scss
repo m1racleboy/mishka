@@ -1,59 +1,71 @@
 .main-header {
-  @include bg-img("mishka-home-mobile.png", 50%);
   margin-bottom: 31px;
+
   background-color: $grey-bg;
+
+  @include bg-img("mishka-home-mobile.png", 50%);
 
   @media (max-width: $mobile-width-only) {
     margin-top: -18px;
   }
 
   @media (min-width: $tablet-width) {
-    @include bg-img("hero-tablet.png", 50%);
     margin-top: -82px;
     padding-top: 82px;
 
+    @include bg-img("hero-tablet.png", 50%);
+
     &::after {
-      @include bg-img("zigzag-tablet.svg", 50%);
-      position: absolute;
       content: "";
+      position: absolute;
+
       width: 100%;
       height: 24px;
       margin-top: -17px;
+
+      @include bg-img("zigzag-tablet.svg", 50%);
     }
   }
 
   @media (min-width: $desktop-width) {
-    @include bg-img("hero-desktop.png", 50%);
     margin-bottom: 109px;
 
+    @include bg-img("hero-desktop.png", 50%);
+
     &::after {
-      @include bg-img("zigzag-desktop.svg", 50%);
-      position: absolute;
       content: "";
+      position: absolute;
+
       width: 100%;
       height: 34px;
       margin-top: -22px;
+
+      @include bg-img("zigzag-desktop.svg", 50%);
     }
   }
 }
 
 .main-header__title {
-  @include font(27px, 30px);
-  font-weight: 700;
-  text-align: center;
   padding-top: 90px;
   padding-bottom: 120px;
 
+  font-weight: 700;
+  text-align: center;
+
+  @include font(27px, 30px);
+
   @media (min-width: $tablet-width) {
-    @include font(43px, 50px);
     padding-top: 74px;
     padding-bottom: 371px;
+
+    @include font(43px, 50px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font(53px, 57px);
     padding-top: 76px;
     padding-bottom: 355px;
+
+    @include font(53px, 57px);
   }
 }
 
@@ -63,8 +75,9 @@
 }
 
 .main-header__description {
-  @include font(14px, 24px);
   color: $grey-dark;
+
+  @include font(14px, 24px);
 }
 
 .main-header__list {
@@ -87,8 +100,8 @@
 
   @media (min-width: $tablet-width) {
     width: calc(var(--content-area) / 2);
-    padding-left: 35px;
     padding-bottom: 40px;
+    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,13 +118,16 @@
 }
 
 .main-header__link {
-  @include font(19px, 24px);
-  font-weight: 700;
-  color: $white;
-  display: block;
   position: relative;
+
+  display: block;
   width: 120px;
   padding-right: 140px;
+
+  font-weight: 700;
+  color: $white;
+
+  @include font(19px, 24px);
 
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
@@ -119,14 +135,17 @@
 }
 
 .main-header__link-interior::after {
-  @include bg-img("interior.svg");
-  position: absolute;
   content: "";
+  position: absolute;
   top: -1px;
   left: 214px;
+
   width: 40px;
   height: 62px;
+
   opacity: 50%;
+
+  @include bg-img("interior.svg");
 
   @media (min-width: $tablet-width) {
     top: 6px;
@@ -148,14 +167,17 @@
 }
 
 .main-header__link-toy::after {
-  @include bg-img("toy.svg");
-  position: absolute;
   content: "";
+  position: absolute;
   top: -3px;
   left: 203px;
+
   width: 60px;
   height: 60px;
+
   opacity: 50%;
+
+  @include bg-img("toy.svg");
 
   @media (min-width: $tablet-width) {
     top: 8px;

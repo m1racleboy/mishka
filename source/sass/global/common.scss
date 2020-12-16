@@ -48,37 +48,44 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: block;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $grey-dark;
-  padding: 14px 0;
-  background-color: transparent;
-  border: 2px solid $grey-dark;
   box-sizing: border-box;
   height: fit-content;
+  padding: 14px 0;
+
+  font-weight: 700;
+  color: $grey-dark;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $grey-dark;
+
   transition: 0.2s;
 
   &:hover,
   &:focus {
-    background-color: $grey-dark;
     color: $white;
+
+    background-color: $grey-dark;
   }
 
   &:active {
-    background-color: $grey-dark;
     color: $grey-active;
+
+    background-color: $grey-dark;
   }
 }
 
 .list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .link {
-  text-decoration: none;
   color: $black;
+  text-decoration: none;
+
   transition: 0.2s;
 
   &:hover,

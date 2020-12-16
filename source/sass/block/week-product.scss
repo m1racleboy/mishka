@@ -1,95 +1,112 @@
 .week-product {
-  padding-bottom: 42px;
-  margin-bottom: 31px;
-  color: $grey-dark;
   position: relative;
 
+  margin-bottom: 31px;
+  padding-bottom: 42px;
+
+  color: $grey-dark;
+
   &::after {
-    @include bg-img("zigzag.svg", 50%);
-    position: absolute;
     content: "";
+    position: absolute;
+    bottom: 0;
+
     width: 100%;
     height: 6px;
-    bottom: 0;
+
+    @include bg-img("zigzag.svg", 50%);
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
     margin-bottom: 55px;
+    padding-bottom: 70px;
 
     &::after {
-      @include bg-img("zigzag-grey-tablet.svg", 50%);
-      position: absolute;
       content: "";
+      position: absolute;
+      bottom: 0;
+
       width: 100%;
       height: 17px;
-      bottom: 0;
+
+      @include bg-img("zigzag-grey-tablet.svg", 50%);
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 96px;
     margin-bottom: 68px;
+    padding-bottom: 96px;
 
     &::after {
-      @include bg-img("zigzag-grey-desktop.svg", 50%);
-      position: absolute;
       content: "";
+      position: absolute;
+      bottom: 0;
+
       width: 100%;
       height: 23px;
-      bottom: 0;
+
+      @include bg-img("zigzag-grey-desktop.svg", 50%);
     }
   }
 }
 
 .week-product__title {
-  @include font(25px, 30px);
-  font-weight: 700;
-  color: $black;
   margin-bottom: 4px;
 
+  font-weight: 700;
+  color: $black;
+
+  @include font(25px, 30px);
+
   @media (min-width: $tablet-width) {
-    @include font(43px, 50px);
     margin-top: 17px;
     margin-bottom: 36px;
+
+    @include font(43px, 50px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font(53px, 57px);
-    margin-left: 30px;
     margin-top: 18px;
+    margin-left: 30px;
+
+    @include font(53px, 57px);
   }
 }
 
 .week-product__legend {
-  @include font(17px, 20px);
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $aqua-green;
   margin-bottom: 17px;
+
+  font-weight: 700;
+  color: $aqua-green;
+  text-transform: uppercase;
+
+  @include font(17px, 20px);
 
   @media (min-width: $tablet-width) {
     width: 100px;
-    text-align: center;
     margin-top: 22px;
     margin-right: 13px;
+
     line-height: 17px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     order: -1;
-    margin-left: 32px;
     margin-top: 26px;
+    margin-left: 32px;
   }
 }
 
 .week-product__description {
-  @include font(15px, 24px);
   margin-bottom: 28px;
 
+  @include font(15px, 24px);
+
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px);
     margin-bottom: 33px;
+
+    @include font(17px, 30px);
   }
 
   @media (min-width: $desktop-width) {
@@ -99,8 +116,9 @@
 }
 
 .week-product__characteristic {
-  @include font(15px, 20px);
   margin-bottom: 28px;
+
+  @include font(15px, 20px);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
@@ -112,20 +130,24 @@
 }
 
 .week-product__price {
-  @include font(17px, 24px);
-  font-weight: 700;
-  text-align: center;
   margin-bottom: 23px;
 
+  font-weight: 700;
+  text-align: center;
+
+  @include font(17px, 24px);
+
   @media (min-width: $tablet-width) {
-    @include font(20px, 24px);
     margin-bottom: 32px;
+
+    @include font(20px, 24px);
   }
 }
 
 .week-product__characteristic-wrapper {
   display: flex;
   padding-bottom: 12px;
+
   border-bottom: $border;
 
   &:not(:last-child) {
@@ -181,15 +203,17 @@
 
 .week-product__wrapper-bottom {
   @media (min-width: $tablet-width) {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     padding-right: 376px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 583px;
     position: relative;
+
     margin-left: 175px;
+    padding-right: 583px;
   }
 }

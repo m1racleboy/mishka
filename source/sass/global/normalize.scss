@@ -11,21 +11,20 @@ main {
 }
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+
+  font-size: 2em;
 }
 
 hr {
-  overflow: visible;
-
   box-sizing: content-box;
-
   height: 0;
+  overflow: visible;
 }
 
 pre {
-  font-family: monospace;
   font-size: 1em;
+  font-family: monospace;
 }
 
 a {
@@ -46,9 +45,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace;
-
   font-size: 1em;
+  font-family: monospace;
 }
 
 small {
@@ -57,9 +55,10 @@ small {
 
 sub,
 sup {
+  position: relative;
+
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -80,13 +79,11 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  margin: 0;
 
   font-size: 100%;
-
   line-height: 1.15;
-
-  margin: 0;
+  font-family: inherit;
 }
 
 button,
@@ -121,16 +118,12 @@ fieldset {
 
 legend {
   display: table;
-
   box-sizing: border-box;
-
   max-width: 100%;
-
   padding: 0;
 
-  white-space: normal;
-
   color: inherit;
+  white-space: normal;
 }
 
 progress {
@@ -144,7 +137,6 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
-
   padding: 0;
 }
 

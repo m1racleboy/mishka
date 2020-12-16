@@ -1,6 +1,7 @@
 .reviews {
-  margin-bottom: 90px;
   position: relative;
+
+  margin-bottom: 90px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
@@ -15,23 +16,28 @@
   }
 
   &::after {
-    @include bg-img("zigzag.svg", 50%);
-    position: absolute;
     content: "";
-    width: 100%;
-    height: 6px;
+    position: absolute;
     bottom: -51px;
 
+    width: 100%;
+    height: 6px;
+
+    @include bg-img("zigzag.svg", 50%);
+
     @media (min-width: $tablet-width) {
-      @include bg-img("zigzag-grey-tablet.svg", 50%);
-      height: 17px;
       bottom: 0;
       left: 0;
+
+      height: 17px;
+
+      @include bg-img("zigzag-grey-tablet.svg", 50%);
     }
 
     @media (min-width: $desktop-width) {
-      @include bg-img("zigzag-grey-desktop.svg", 50%);
       height: 23px;
+
+      @include bg-img("zigzag-grey-desktop.svg", 50%);
     }
   }
 }
@@ -41,19 +47,22 @@
 
   &::before {
     @media (min-width: $tablet-width) {
-      @include bg-img("review.png");
-      position: absolute;
       content: "";
+      position: absolute;
+      top: -84px;
+      z-index: -1;
+
       width: 350px;
       height: 457px;
-      top: -84px;
       margin-left: -50px;
-      z-index: -1;
+
+      @include bg-img("review.png");
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 0;
       top: -79px;
+
+      margin-left: 0;
     }
   }
 
@@ -65,22 +74,26 @@
 }
 
 .reviews__title {
-  @include font(25px, 30px);
-  font-weight: 700;
   margin-bottom: 14px;
 
+  font-weight: 700;
+
+  @include font(25px, 30px);
+
   @media (min-width: $tablet-width) {
-    @include font(43px, 50px);
-    margin-bottom: 38px;
     order: -2;
+    margin-bottom: 38px;
+
+    @include font(43px, 50px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font(53px, 57px);
     order: -2;
-    margin-left: 174px;
     margin-top: -1px;
     margin-bottom: 36px;
+    margin-left: 174px;
+
+    @include font(53px, 57px);
   }
 }
 
@@ -95,18 +108,21 @@
 }
 
 .reviews__description {
-  @include font(15px, 30px);
-  color: $grey-dark;
   margin-bottom: 34px;
 
+  color: $grey-dark;
+
+  @include font(15px, 30px);
+
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px);
     margin-bottom: 60px;
+
+    @include font(17px, 30px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 174px;
     margin-bottom: 43px;
+    margin-left: 174px;
   }
 }
 
@@ -131,15 +147,18 @@
 }
 
 .reviews__author-name {
-  @include font(17px, 24px);
-  font-style: normal;
-  font-weight: 700;
   display: block;
   margin-bottom: 5px;
 
+  font-style: normal;
+  font-weight: 700;
+
+  @include font(17px, 24px);
+
   @media (min-width: $tablet-width) {
-    @include font(18px, 24px);
     margin-bottom: 7px;
+
+    @include font(18px, 24px);
   }
 
   @media (min-width: $desktop-width) {
@@ -148,9 +167,10 @@
 }
 
 .reviews__author-contact {
-  @include font(17px, 24px);
   font-style: normal;
   color: $grey-dark;
+
+  @include font(17px, 24px);
 }
 
 .reviews__item {
@@ -168,10 +188,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     margin: 0;
-    grid-template-columns: 50px 50px;
-    column-gap: 37px;
     margin-right: 25px;
     margin-bottom: 26px;
+
+    column-gap: 37px;
+
+    grid-template-columns: 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,12 +205,14 @@
 
 .reviews-toggle {
   position: relative;
+
   background-color: transparent;
 
   @media (max-width: $mobile-width-only) {
-    border: 1px solid $grey-border;
-    padding: 11px 49px 10px 37px;
     width: 130px;
+    padding: 11px 49px 10px 37px;
+
+    border: 1px solid $grey-border;
   }
 
   @media (min-width: $tablet-width) {
@@ -209,9 +233,9 @@
   width: $mobile-content-width;
 
   @media (min-width: $tablet-width) {
+    order: -1;
     width: 175px;
     margin-top: -5px;
-    order: -1;
   }
 
   @media (min-width: $desktop-width) {

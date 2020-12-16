@@ -1,6 +1,6 @@
 .footer-social {
   @media (max-width: $mobile-width-only) {
-    border-bottom: $border;
+    border-bottom: $border-footer;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,9 +20,9 @@
 
 .footer-social__list {
   display: flex;
-  width: 140px;
   justify-content: space-between;
   align-items: center;
+  width: 140px;
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {

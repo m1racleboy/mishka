@@ -3,7 +3,6 @@
 }
 
 .page__body {
-  @include font(18px);
   display: flex;
   flex-direction: column;
   align-content: start;
@@ -11,4 +10,6 @@
 
   font-family: "Open Sans", "Arial", sans-serif;
   color: $black;
+
+  @include font(18px);
 }
