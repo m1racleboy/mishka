@@ -3,13 +3,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: $mobile-width 1fr;
     min-height: 88px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 410px 290px 350px;
+    grid-template-columns: 410px 240px 400px;
   }
 }
 
@@ -81,7 +81,7 @@
 @media (max-width: $mobile-width-only) {
   .main-nav__logo-wrapper {
     margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: $border-mobile;
   }
 
   .main-nav--closed .site-list__item {

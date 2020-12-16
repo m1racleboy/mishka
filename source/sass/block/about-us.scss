@@ -38,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 292px 328px;
+    grid-template-columns: $tablet-content-width 328px;
     grid-template-rows: min-content min-content min-content;
     grid-column-gap: 58px;
     grid-row-gap: 27px;

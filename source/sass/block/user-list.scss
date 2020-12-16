@@ -20,7 +20,7 @@
 
   @media (max-width: $mobile-width-only) {
     margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: $border-mobile;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
 
 .user-list__link {
   @media (max-width: $mobile-width-only) {
-    width: 260px;
+    width: $mobile-content-width;
     display: flex;
     justify-content: flex-start;
     margin: 0 auto;
@@ -59,32 +59,30 @@
 .user-list__link-cart {
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    background-color: $white;
+  &::before {
+    @include bg-img("cart.svg");
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 18px;
 
-    &::before {
-      @include bg-img("cart.svg");
-      position: absolute;
-      content: "";
-      width: 21px;
-      height: 18px;
+    @media (max-width: $mobile-width-only) {
       left: 0;
       top: 2px;
     }
+
+    @media (min-width: $tablet-width) {
+      top: 3px;
+      left: 1px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $white;
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 53px;
-
-    &::before {
-      @include bg-img("cart.svg");
-      position: absolute;
-      content: "";
-      width: 21px;
-      height: 18px;
-      top: 3px;
-      left: 1px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -92,34 +90,40 @@
   }
 }
 
+.user-list__item-search {
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+  }
+}
+
 .user-list__link-search {
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      @include bg-img("search.svg");
-      position: absolute;
-      content: "";
-      width: 18px;
-      height: 18px;
-      left: 0;
+  &::before {
+    @include bg-img("search.svg");
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+
+    @media (max-width: $mobile-width-only) {
+      left: 2px;
       top: 3px;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 33px;
+      top: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 32px;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding: 44px 41px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-
-    &::before {
-      @include bg-img("search.svg");
-      position: absolute;
-      content: "";
-      width: 18px;
-      height: 18px;
-      left: 32px;
-      top: 35px;
-    }
+    border-left: $border;
+    border-right: $border;
   }
 }

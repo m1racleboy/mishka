@@ -126,7 +126,7 @@
 
 .contacts__button {
   margin-top: 41px;
-  width: 260px;
+  width: $mobile-content-width;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -146,14 +146,14 @@
   @media (max-width: $mobile-width-only) {
     @include bg-img("map-mobile.jpg");
     margin: 0 -30px;
-    width: 320px;
+    width: $mobile-width;
     height: 455px;
   }
 
   @media (min-width: $tablet-width) {
     @include bg-img("map-tablet.jpg");
     margin: 0 -50px;
-    width: 768px;
+    width: $tablet-width;
     height: 457px;
   }
 
