@@ -1,4 +1,41 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    min-height: 88px;
+
+    grid-template-columns: $mobile-width 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    grid-template-columns: 410px 240px 400px;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .main-nav__toggle {
+  position: absolute;
+  top: 26px;
+  right: 0;
+
+  display: block;
+  width: 22px;
+  height: 22px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -8,24 +45,79 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    grid-template-rows: 88px 65px;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 1px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: $button-black;
+  box-shadow: 0 6px 0 0 $button-black, 0 12px 0 0 $button-black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -3px;
+
+    width: 27px;
+    height: 2px;
+
+    background-color: $black;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.main-nav__logo-wrapper {
+  background-color: $white;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__logo-wrapper {
+    margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
+
+    border-bottom: $border-mobile;
   }
 
-  .main-nav {
-    display: grid;
-    grid-template-columns: 410px 290px 350px;
-    grid-template-rows: 88px 65px;
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
+
+  .main-nav--opened .user-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
   }
 }

@@ -1,53 +1,103 @@
 .about-us {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+    margin-left: 225px;
+  }
 }
 
 .about-us__title {
-  @include font(25px, 30px);
+  margin-bottom: 27px;
+
   font-weight: 700;
+
+  @include font(25px, 30px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+
+    @include font(43px, 50px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+
+    @include font(53px, 57px);
+  }
+}
+
+.about-us__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-column-gap: 95px;
+    grid-row-gap: 27px;
+    grid-template-columns: 240px 328px;
+    grid-template-rows: min-content min-content min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    grid-column-gap: 58px;
+    grid-row-gap: 27px;
+    grid-template-columns: $tablet-content-width 328px;
+    grid-template-rows: min-content min-content min-content;
+  }
 }
 
 .about-us__item {
-  @include font(17px, 20px);
+  position: relative;
+
   font-weight: 700;
-}
 
-@media (min-width: $tablet-width) {
-  .about-us__list {
-    display: grid;
-    grid-template-columns: 230px 328px;
-    grid-template-rows: min-content min-content min-content;
-    grid-column-gap: 110px;
-    grid-row-gap: 60px;
+  @include font(17px, 20px);
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
   }
 
-  .about-us__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    @include font(20px);
+  }
+}
+
+.about-us__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  .about-us__item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.about-us__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 3/4;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .about-us__list {
-    display: grid;
-    grid-template-columns: 230px 328px;
-    grid-template-rows: min-content min-content min-content;
-    grid-column-gap: 110px;
-    grid-row-gap: 60px;
-  }
+.about-us__icon-wrapper {
+  display: flex;
+  width: 55px;
+  height: 38px;
+  margin-bottom: 18px;
+}
 
-  .about-us__item:nth-child(2) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .about-us__item:nth-child(3) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
+.about-us__svg {
+  margin: auto;
 }
