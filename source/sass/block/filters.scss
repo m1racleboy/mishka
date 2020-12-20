@@ -3,8 +3,7 @@
 }
 
 .filters__fieldset {
-  margin: 34px 0;
-
+  margin: 0;
   border: none;
 }
 
@@ -12,6 +11,7 @@
   font-weight: 700;
   color: $aqua-green;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   @include font(17px);
 }
@@ -20,7 +20,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template: "a b"
+    grid-template:
+      "a b"
       "a b"
       "a b";
   }
@@ -28,7 +29,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
 
-    grid-template: "a b c"
+    grid-template:
+      "a b c"
       "a b c";
   }
 }
@@ -50,12 +52,20 @@
   color: $black;
 
   opacity: 30%;
+  transition: 0.3s;
 
   @include font(17px);
 }
 
+.filters__name-item > input[type="text"]:focus::placeholder,
+.filters__title + input:focus::placeholder,
+.filters__textarea:focus::placeholder {
+  opacity: 100%;
+}
+
 .filters__legend {
   color: $grey-dark;
+  margin-bottom: 30px;
 
   @include font(14px);
 }
@@ -84,7 +94,7 @@
 
   .filters__contacts-phone,
   .filters__contacts-email {
-    display: flex;
+    flex-direction: row;
   }
 
   .filters__wrapper-bottom {
@@ -92,4 +102,218 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+}
+
+.filters__type {
+  margin-bottom: 41px;
+}
+
+.filters__title-type {
+  margin-bottom: 32px;
+}
+
+.filters__type-item {
+  position: relative;
+  padding-left: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+.filters__type-label {
+  @include font(17px, 18px);
+  font-weight: 700;
+  transition: 0.3s;
+
+  &:hover > .filters__radio-style,
+  &:focus > .filters__radio-style {
+    border: 2px solid $green-border;
+  }
+
+  &:active > .filters__radio-style {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.filters__radio-style {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 2px solid $grey-dark;
+  border-radius: 50%;
+  margin-left: -60px;
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $green-border;
+  }
+}
+
+.filters__radio:checked + .filters__radio-style::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $green-border;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//
+
+.filters__color {
+  margin-bottom: 42px;
+}
+
+.filters__title-color {
+  margin-bottom: 32px;
+}
+
+.filters__color-item {
+  position: relative;
+  padding-left: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 42px;
+  }
+}
+
+.filters__color-label {
+  @include font(17px, 19px);
+  font-weight: 700;
+  transition: 0.3s;
+
+  &:hover > .filters__checkbox-style,
+  &:focus > .filters__checkbox-style {
+    border: 2px solid $green-border;
+  }
+
+  &:active > .filters__checkbox-style {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.filters__checkbox-style {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 2px solid $grey-dark;
+  margin-left: -60px;
+
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $green-border;
+  }
+}
+
+.filters__checkbox:checked + .filters__checkbox-style::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 16px;
+  color: $black;
+
+  @include bg-img("tick-mobile.png");
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filters__name {
+  margin-bottom: 10px;
+}
+
+.filters__title-name {
+  margin-bottom: 28px;
+}
+
+.filters__name-label {
+  @include font(17px, 18px);
+  font-weight: 700;
+}
+
+.filters__input {
+  border: none;
+  padding: 16px 0;
+  box-shadow: inset 0 -2px 0 $black;
+  margin-bottom: 23px;
+  outline: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 $green-border;
+  }
+}
+
+.filters__contacts-phone,
+.filters__contacts-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters__title-phone,
+.filters__title-mail {
+  margin-bottom: 0;
+}
+
+.filters__input-phone {
+  padding-top: 15px;
+  padding-bottom: 19px;
+  position: relative;
+  background-color: transparent;
+}
+
+.filters__input-mail {
+  padding: 17px 0;
+  position: relative;
+  background-color: transparent;
+}
+
+.filters__contacts-phone {
+  margin-bottom: 11px;
+}
+
+.filters__contacts {
+  margin-bottom: 10px;
+}
+
+.filters__title-info {
+  margin-bottom: 21px;
+}
+
+.filters__textarea {
+  border: 2px solid $black;
+  width: 260px;
+  padding: 15px;
+  height: 142px;
+  resize: none;
+  outline: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: $green-border;
+  }
+}
+
+.filters__info {
+  margin-bottom: 14px;
+}
+
+.filters__button {
+  text-align: center;
+  width: 260px;
 }

@@ -1,11 +1,28 @@
+.page-main {
+  @media (min-width: $tablet-width) {
+    margin-top: -82px;
+  }
+}
+
 .page-main__title {
   margin: 0;
 
   font-weight: 700;
 
   @include font(27px, 30px);
+
+  padding-bottom: 73px;
+  text-align: center;
 }
 
 .page-main__title-wrapper {
   background-color: $grey-light;
+  margin-bottom: 17px;
+  padding-top: 73px;
+}
+
+.page-main__description {
+  @include font(13px, 24px);
+  color: $grey-dark;
+  margin-bottom: 28px;
 }

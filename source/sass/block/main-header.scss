@@ -10,7 +10,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -82px;
     padding-top: 82px;
 
     @include bg-img("hero-tablet.png", 50%);
