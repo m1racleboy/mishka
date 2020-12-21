@@ -60,7 +60,7 @@
       bottom: -13px;
       margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
 
-      @include bg-img("zigzag-desktop.svg", 50%);
+      @include bg-img("zigzag-desktop-form.svg", 50%);
     }
   }
 }

@@ -1,32 +1,72 @@
 .production-process {
   display: flex;
   flex-direction: column;
-  margin-bottom: 91px;
+  border: 1px solid $grey-light;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 58px;
+    padding-bottom: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
 
-    grid-template: "a a b"
+    grid-template:
+      "a a b"
       "a a b"
       "a a b";
   }
 }
 
 .production-process__title {
+  position: relative;
   font-weight: 700;
 
   @include font(17px, 24px);
+
+  margin-left: 49px;
+
+  &::before {
+    @include bg-img("video.svg");
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 22px;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 156px;
+    padding-left: 41px;
+    margin-top: 22px;
+    margin-bottom: 27px;
+  }
+}
+
+.production-process__video-img {
+  width: 260px;
+  height: 150px;
+  border: 1px solid $grey-light;
 }
 
 .production-process__description {
   color: $grey-dark;
 
   @include font(13px, 24px);
+
+  @media (max-width: $mobile-width-only) {
+    width: 220px;
+    margin-left: 33px;
+    margin-bottom: 41px;
+  }
 }
 
 .production-process__button {
-  padding: 0 18px;
-
+  width: 192px;
+  margin: 0 auto;
+  text-align: center;
   font-weight: 700;
   color: $grey-dark;
   text-transform: uppercase;
@@ -34,15 +74,30 @@
   @include font(18px, 20px);
 }
 
-@media (min-width: $tablet-width) {
-  .production-process__video-wrapper {
+.production-process__video-wrapper {
+  position: relative;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
     order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: a;
   }
 }
 
+.production-process__video-button {
+  position: absolute;
 
-@media (min-width: $tablet-width) {
-  .production-process__video-wrapper {
-    grid-area: a;
-  }
+  @include bg-img("video-button.svg");
+
+  content: "";
+  width: 109px;
+  height: 85px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
 }
