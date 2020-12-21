@@ -8,6 +8,7 @@
 
 .filters__fieldset {
   margin: 0;
+
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -16,20 +17,50 @@
 }
 
 .filters__title {
+  position: relative;
+
+  margin-bottom: 20px;
+
   font-weight: 700;
   color: $aqua-green;
   text-transform: uppercase;
-  margin-bottom: 20px;
 
   @include font(17px);
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 45%;
+      right: 0;
+
+      width: 200px;
+
+      border-top: 1px solid $green-border;
+    }
+  }
+
+  &-phone::after {
+    @media (max-width: $mobile-width-only) {
+      top: 40%;
+    }
+  }
+
+  &-mail::after {
+    @media (max-width: $mobile-width-only) {
+      top: 40%;
+
+      width: 182px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 125px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 60px;
     margin-right: 73px;
+    margin-left: 60px;
   }
 }
 
@@ -60,8 +91,8 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 501px;
     flex-direction: row;
+    width: 501px;
     margin-bottom: 2px;
   }
 
@@ -76,6 +107,7 @@
   color: $black;
 
   opacity: 30%;
+
   transition: 0.3s;
 
   @include font(17px);
@@ -112,6 +144,7 @@
 
 .filters__type-item {
   position: relative;
+
   padding-left: 60px;
 
   &:not(:last-child) {
@@ -128,9 +161,11 @@
 }
 
 .filters__type-label {
-  @include font(17px, 18px);
   font-weight: 700;
+
   transition: 0.3s;
+
+  @include font(17px, 18px);
 
   &:hover > .filters__radio-style,
   &:focus > .filters__radio-style {
@@ -142,20 +177,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include font(19px);
     margin-left: 17px;
+
+    @include font(19px);
   }
 }
 
 .filters__radio-style {
   position: absolute;
+  top: 50%;
+
   width: 40px;
   height: 40px;
-  top: 50%;
-  transform: translate(0, -50%);
+  margin-left: -60px;
+
   border: 2px solid $grey-dark;
   border-radius: 50%;
-  margin-left: -60px;
+  transform: translate(0, -50%);
 
   transition: 0.3s;
 
@@ -172,14 +210,16 @@
 }
 
 .filters__radio:checked + .filters__radio-style::before {
-  position: absolute;
   content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: $green-border;
+  position: absolute;
   top: 50%;
   left: 50%;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: $green-border;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
@@ -192,9 +232,9 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     padding-top: 65px;
     padding-bottom: 11px;
-    margin-bottom: 66px;
   }
 }
 
@@ -204,6 +244,7 @@
 
 .filters__color-item {
   position: relative;
+
   padding-left: 60px;
 
   &:not(:last-child) {
@@ -226,9 +267,11 @@
 }
 
 .filters__color-label {
-  @include font(17px, 19px);
   font-weight: 700;
+
   transition: 0.3s;
+
+  @include font(17px, 19px);
 
   &:hover > .filters__checkbox-style,
   &:focus > .filters__checkbox-style {
@@ -240,19 +283,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include font(19px);
     margin-left: 12px;
+
+    @include font(19px);
   }
 }
 
 .filters__checkbox-style {
   position: absolute;
+  top: 50%;
+
   width: 38px;
   height: 38px;
-  top: 50%;
-  transform: translate(0, -50%);
-  border: 2px solid $grey-dark;
   margin-left: -60px;
+
+  border: 2px solid $grey-dark;
+  transform: translate(0, -50%);
 
   transition: 0.2s;
 
@@ -269,25 +315,27 @@
 }
 
 .filters__checkbox:checked + .filters__checkbox-style::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
   color: $black;
 
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 
   @media (max-width: $mobile-width-only) {
-    @include bg-img("tick-mobile.png");
     width: 23px;
     height: 16px;
+
+    @include bg-img("tick-mobile.png");
   }
 
   @media (min-width: $tablet-width) {
-    @include bg-img("tick.png");
     width: 33px;
     height: 22px;
+
+    @include bg-img("tick.png");
   }
 }
 
@@ -310,23 +358,27 @@
 }
 
 .filters__name-label {
-  @include font(17px, 18px);
   font-weight: 700;
 
+  @include font(17px, 18px);
+
   @media (min-width: $tablet-width) {
-    @include font(19px);
+    margin-right: 24px;
     padding-top: 15px;
     padding-bottom: 16px;
-    margin-right: 24px;
+
+    @include font(19px);
   }
 }
 
 .filters__input {
-  border: none;
-  padding: 16px 0;
-  box-shadow: inset 0 -2px 0 $black;
   margin-bottom: 23px;
+  padding: 16px 0;
+
+  border: none;
   outline: none;
+  box-shadow: inset 0 -2px 0 $black;
+
   transition: 0.3s;
 
   &:hover,
@@ -335,8 +387,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 15px 17px 17px 18px;
     width: 100%;
+    padding: 15px 17px 17px 18px;
   }
 }
 
@@ -366,9 +418,9 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 100px;
+    margin-right: 93px;
     padding-top: 16px;
     padding-bottom: 19px;
-    margin-right: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -377,9 +429,11 @@
 }
 
 .filters__input-phone {
+  position: relative;
+
   padding-top: 15px;
   padding-bottom: 19px;
-  position: relative;
+
   background-color: transparent;
 
   @media (min-width: $desktop-width) {
@@ -389,6 +443,10 @@
 
 .filters__input-mail {
   position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 19px;
+
   background-color: transparent;
 
   @media (min-width: $desktop-width) {
@@ -410,9 +468,9 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
     padding-top: 64px;
     padding-bottom: 27px;
-    margin-bottom: 50px;
   }
 }
 
@@ -432,8 +490,8 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
     margin-right: 128px;
+    padding-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -442,13 +500,16 @@
 }
 
 .filters__textarea {
-  border: 2px solid $grey-dark;
   width: 260px;
-  padding: 15px;
   height: 142px;
-  resize: none;
+  padding: 15px;
+
+  border: 2px solid $grey-dark;
   outline: none;
+
   transition: 0.3s;
+
+  resize: none;
 
   &:hover,
   &:focus {
@@ -473,14 +534,15 @@
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
 .filters__button {
-  text-align: center;
   width: 260px;
+
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 230px;
@@ -488,13 +550,15 @@
 }
 
 .filters__legend {
-  color: $grey-dark;
   margin-bottom: 30px;
+
+  color: $grey-dark;
 
   @include font(14px);
 
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px);
     padding-top: 12px;
+
+    @include font(17px, 30px);
   }
 }

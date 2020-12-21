@@ -232,6 +232,9 @@
 .reviews__button {
   width: $mobile-content-width;
 
+  text-align: center;
+  text-decoration: none;
+
   @media (min-width: $tablet-width) {
     order: -1;
     width: 175px;
