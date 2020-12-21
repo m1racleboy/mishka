@@ -9,6 +9,10 @@
 .filters__fieldset {
   margin: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .filters__title {
@@ -21,6 +25,11 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+    margin-right: 73px;
   }
 }
 
@@ -55,6 +64,10 @@
     flex-direction: row;
     margin-bottom: 2px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .filters__name-item > input[type="text"]::placeholder,
@@ -78,24 +91,10 @@
   opacity: 100%;
 }
 
-@media (min-width: $tablet-width) {
-  .filters__color,
-  .filters__contacts {
+.filters__color,
+.filters__contacts {
+  @media (min-width: $tablet-width) {
     background-color: $grey-light;
-  }
-
-  .filters__fieldset {
-    display: flex;
-  }
-
-  .filters__name-item {
-    flex-direction: row;
-  }
-
-  .filters__wrapper-bottom {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
   }
 }
 
@@ -357,7 +356,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -372,6 +370,10 @@
     padding-bottom: 19px;
     margin-right: 93px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 15px;
+  }
 }
 
 .filters__input-phone {
@@ -379,11 +381,19 @@
   padding-bottom: 19px;
   position: relative;
   background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .filters__input-mail {
   position: relative;
   background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .filters__contacts-phone {
@@ -412,6 +422,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .filters__title-info {
@@ -420,6 +434,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 18px;
     margin-right: 128px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 76px;
   }
 }
 
@@ -439,6 +457,24 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.filters__wrapper-bottom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
