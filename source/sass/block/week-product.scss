@@ -148,7 +148,7 @@
   display: flex;
   padding-bottom: 12px;
 
-  border-bottom: $border;
+  @include border(bottom, $black-opacity);
 
   &:not(:last-child) {
     margin-bottom: 7px;

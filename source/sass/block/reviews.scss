@@ -212,7 +212,7 @@
     width: 130px;
     padding: 11px 49px 10px 37px;
 
-    border: 1px solid $grey-border;
+    @include border-all($grey-border, 2px);
   }
 
   @media (min-width: $tablet-width) {
