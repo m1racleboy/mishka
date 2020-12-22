@@ -9,7 +9,7 @@
 
     margin-bottom: 81px;
 
-    border-bottom: $border-header;
+    @include border (bottom, $black-opacity, 1px);
   }
 }
 

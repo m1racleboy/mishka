@@ -134,7 +134,7 @@
 
   color: $grey-dark;
 
-  border-bottom: 1px solid $green-border;
+  @include border (bottom, $green-border, 1px);
 
   @media (min-width: $tablet-width) {
     width: 204px;
