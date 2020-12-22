@@ -76,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: $desktop-content;
     margin: 0 auto;
     margin-bottom: 78px;
   }

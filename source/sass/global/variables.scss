@@ -2,9 +2,12 @@ $grey-dark: #444444;
 $grey-light: #f1f1f1;
 $grey-border: #ececec;
 $grey-bg: #fbfbfb;
+$grey-white: #e5e5e5;
 $grey-active: rgba(255, 255, 255, 0.3);
 
 $black: #000000;
+$black-opacity: rgba(0, 0, 0, 0.1);
+$black-opacity-light: rgba(0, 0, 0, 0.3);
 $button-black: #231f20;
 
 $white: #ffffff;
@@ -16,11 +19,8 @@ $turquoise: #56c3b2;
 $mobile-width: 320px;
 $mobile-content-width: 260px;
 $desktop-width: 1150px;
+$desktop-content: 700px;
 $tablet-width: 768px;
 $tablet-content-width: 292px;
-$tablet-width-max:1149px;
+$tablet-width-max: 1149px;
 $mobile-width-only: 767px;
-
-$border-footer: 1px solid #e5e5e5;
-$border-mobile: 1px solid $grey-border;
-$border-header: 1px solid rgba(0, 0, 0, 0.1);

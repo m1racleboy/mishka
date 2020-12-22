@@ -1,6 +1,6 @@
 .footer-social {
   @media (max-width: $mobile-width-only) {
-    border-bottom: $border-footer;
+    @include border (bottom, $grey-white, 1px);
   }
 
   @media (min-width: $tablet-width) {

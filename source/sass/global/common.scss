@@ -57,7 +57,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: transparent;
-  border: 2px solid $grey-dark;
+
+  @include border-all($grey-dark);
 
   transition: 0.2s;
 
