@@ -133,7 +133,6 @@
     padding: 44px 41px;
 
     @include border(right, $black-opacity);
-
     @include border(left, $black-opacity);
   }
 }

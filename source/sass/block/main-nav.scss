@@ -79,10 +79,9 @@
     width: 20px;
     height: 2px;
 
-    transform: rotate(0deg);
-
     background-color: $button-black;
     box-shadow: 0 6px 0 0 $button-black, 0 12px 0 0 $button-black;
+    transform: rotate(0deg);
   }
 
   &::after {
@@ -98,7 +97,7 @@
   .main-nav__logo-wrapper {
     margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
 
-    @include border (bottom, $grey-border, 1px);
+    @include border(bottom, $grey-border, 1px);
   }
 
   .main-nav--closed .site-list__item {

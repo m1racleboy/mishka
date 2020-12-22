@@ -61,18 +61,16 @@
           <h3 class="filters__title filters__title-type title">Тип</h3>
           <ul class="filters__type-list list">
             <li class="filters__type-item">
+              <input class="filters__radio visually-hidden" type="radio" name="type-group"
+                value="Аксуссуар для интерьера" id="filter-interior-accessory" checked />
               <label class="filters__type-label" for="filter-interior-accessory">
-                <input class="filters__radio visually-hidden" type="radio" name="type-group"
-                  value="Аксуссуар для интерьера" id="filter-interior-accessory" checked />
-                <span class="filters__radio-style"></span>
                 Аксессуар для интерьера
               </label>
             </li>
             <li class="filters__type-item">
+              <input class="filters__radio visually-hidden" type="radio" name="type-group" value="Детская игрушка"
+                id="filter-kid-toy" />
               <label class="filters__type-label" for="filter-kid-toy">
-                <input class="filters__radio visually-hidden" type="radio" name="type-group" value="Детская игрушка"
-                  id="filter-kid-toy" />
-                <span class="filters__radio-style"></span>
                 Детская игрушка
               </label>
             </li>
@@ -83,47 +81,28 @@
           <h3 class="filters__title filters__title-color title">Цвет</h3>
           <ul class="filters__color-list list">
             <li class="filters__color-item">
-              <label class="filters__color-label" for="filter-white">
-                <input class="visually-hidden filters__checkbox" type="checkbox" name="white" id="filter-white"
-                  checked />
-                <span class="filters__checkbox-style"></span>
-                Белый
-              </label>
+              <input class="visually-hidden filters__checkbox" type="checkbox" name="white" id="filter-white" checked />
+              <label class="filters__color-label" for="filter-white">Белый</label>
             </li>
             <li class="filters__color-item">
-              <label class="filters__color-label" for="filter-grey">
-                <input class="visually-hidden filters__checkbox" type="checkbox" name="grey" id="filter-grey" checked />
-                <span class="filters__checkbox-style"></span>
-                Серый
-              </label>
+              <input class="visually-hidden filters__checkbox" type="checkbox" name="grey" id="filter-grey" checked />
+              <label class="filters__color-label" for="filter-grey">Серый</label>
             </li>
             <li class="filters__color-item">
-              <label class="filters__color-label" for="filter-tiffany">
-                <input class="visually-hidden filters__checkbox" type="checkbox" name="tiffany" id="filter-tiffany" />
-                <span class="filters__checkbox-style"></span>
-                «Тиффани»
-              </label>
+              <input class="visually-hidden filters__checkbox" type="checkbox" name="tiffany" id="filter-tiffany" />
+              <label class="filters__color-label" for="filter-tiffany">«Тиффани»</label>
             </li>
             <li class="filters__color-item">
-              <label class="filters__color-label" for="filter-black">
-                <input class="visually-hidden filters__checkbox" type="checkbox" name="black" id="filter-black" />
-                <span class="filters__checkbox-style"></span>
-                Черный
-              </label>
+              <input class="visually-hidden filters__checkbox" type="checkbox" name="black" id="filter-black" />
+              <label class="filters__color-label" for="filter-black">Черный</label>
             </li>
             <li class="filters__color-item">
-              <label class="filters__color-label" for="filter-pink">
-                <input class="visually-hidden filters__checkbox" type="checkbox" name="pink" id="filter-pink" />
-                <span class="filters__checkbox-style"></span>
-                Розовый
-              </label>
+              <input class="visually-hidden filters__checkbox" type="checkbox" name="pink" id="filter-pink" />
+              <label class="filters__color-label" for="filter-pink">Розовый</label>
             </li>
             <li class="filters__color-item">
-              <label class="filters__color-label" for="filter-orange">
-                <input class="visually-hidden filters__checkbox" type="checkbox" name="orange" id="filter-orange" />
-                <span class="filters__checkbox-style"></span>
-                Оранжевый
-              </label>
+              <input class="visually-hidden filters__checkbox" type="checkbox" name="orange" id="filter-orange" />
+              <label class="filters__color-label" for="filter-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
@@ -133,15 +112,18 @@
           <ul class="filters__name-list list">
             <li class="filters__name-item">
               <label class="filters__name-label" for="filter-name">Имя:</label>
-              <input class="filters__input" type="text" name="name" id="filter-name" placeholder="Введите ваше имя*" required />
+              <input class="filters__input" type="text" name="name" id="filter-name" placeholder="Введите ваше имя*"
+                required />
             </li>
             <li class="filters__name-item">
               <label class="filters__name-label" for="filter-surname">Фамилия:</label>
-              <input class="filters__input" type="text" name="surname" id="filter-surname" placeholder="Укажите фамилию*" required />
+              <input class="filters__input" type="text" name="surname" id="filter-surname"
+                placeholder="Укажите фамилию*" required />
             </li>
             <li class="filters__name-item">
               <label class="filters__name-label" for="filter-lastname">Отчество:</label>
-              <input class="filters__input" type="text" name="lastname" id="filter-lastname" placeholder="Отчество, если желаете" />
+              <input class="filters__input" type="text" name="lastname" id="filter-lastname"
+                placeholder="Отчество, если желаете" />
             </li>
           </ul>
         </fieldset>
@@ -150,11 +132,13 @@
           <div class="filters__contacts-wrapper">
             <div class="filters__contacts-phone">
               <label class="filters__title filters__title-phone">Тел</label>
-              <input class="filters__input filters__input-phone" type="tel" name="phone" inputmode="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
+              <input class="filters__input filters__input-phone" type="tel" name="phone" inputmode="tel"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
             </div>
             <div class="filters__contacts-email">
               <label class="filters__title filters__title-mail">e-mail</label>
-              <input class="filters__input filters__input-mail" type="email" name="email" inputmode="email" placeholder="Ваш Email*" required />
+              <input class="filters__input filters__input-mail" type="email" name="email" inputmode="email"
+                placeholder="Ваш Email*" required />
             </div>
           </div>
         </fieldset>
