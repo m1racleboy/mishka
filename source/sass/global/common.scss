@@ -58,13 +58,15 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
 
-  transition: 0.2s;
+  transition: background-color 0.3s, color 0.3s;
 
   @include border-all($grey-dark);
 
   &:hover,
   &:focus {
     color: $white;
+
+    cursor: pointer;
 
     background-color: $grey-dark;
   }
@@ -87,7 +89,7 @@ input[type="radio"].visually-hidden {
   color: $black;
   text-decoration: none;
 
-  transition: 0.2s;
+  transition: opacity 0.3s;
 
   &:hover,
   &:focus {

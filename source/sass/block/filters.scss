@@ -108,7 +108,7 @@
 
   opacity: 30%;
 
-  transition: 0.3s;
+  transition: opacity 0.3s;
 
   @include font(17px);
 
@@ -165,17 +165,17 @@
 
   font-weight: 700;
 
-  transition: 0.3s;
+  transition: border-color 0.3s;
 
   @include font(17px, 18px);
 
   &:hover::before,
   &:focus::before {
-    @include border-all($green-border);
+    border-color: $green-border;
   }
 
   &:active::before {
-    @include border-all($black-opacity-light);
+    border-color: $black-opacity-light;
   }
 
   @media (min-width: $tablet-width) {
@@ -196,13 +196,13 @@
     border-radius: 50%;
     transform: translate(0, -50%);
 
-    transition: 0.3s;
+    transition: border-color 0.3s;
 
     @include border-all($grey-dark);
 
     &:hover,
     &:focus {
-      @include border-all($green-border);
+      border-color: $green-border;
     }
 
     @media (min-width: $tablet-width) {
@@ -277,17 +277,17 @@
 
   font-weight: 700;
 
-  transition: 0.3s;
+  transition: border-color 0.3s;
 
   @include font(17px, 19px);
 
   &:hover::before,
   &:focus::before {
-    @include border-all($green-border);
+    border-color: $green-border;
   }
 
   &:active::before {
-    @include border-all($black-opacity-light);
+    border-color: $black-opacity-light;
   }
 
   @media (min-width: $tablet-width) {
@@ -306,13 +306,14 @@
     margin-left: -60px;
 
     @include border-all($grey-dark);
+
     transform: translate(0, -50%);
 
-    transition: 0.2s;
+    transition: border-color 0.3s;
 
     &:hover,
     &:focus {
-      @include border-all($grey-dark);
+      border-color: $green-border;
     }
 
     @media (min-width: $tablet-width) {
@@ -402,7 +403,7 @@
   outline: none;
   box-shadow: inset 0 -2px 0 $black;
 
-  transition: 0.3s;
+  transition: box-shadow 0.3s;
 
   &:hover,
   &:focus {
@@ -529,7 +530,7 @@
 
   outline: none;
 
-  transition: 0.3s;
+  transition: border-color 0.3s;
 
   resize: none;
 

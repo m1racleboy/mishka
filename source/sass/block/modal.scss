@@ -1,0 +1,80 @@
+.modal {
+  @include border(top, $grey-modal);
+}
+
+.modal__show {
+  display: flex;
+}
+
+.modal__title {
+  @include font(25px, 30px);
+  color: $black;
+  margin: 0 auto;
+}
+
+.modal__form {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__size-wrapper {
+  display: flex;
+  @include font(17px);
+  color: $grey-dark;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal__label {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  @include border-all($grey-dark-opacity);
+
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: $grey-dark-light;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-color: $aqua-green;
+  }
+}
+
+.modal__checkbox:checked + .modal__label {
+  border-color: $aqua-green;
+}
+
+.modal__description {
+  @include font(15px, 30px);
+  color: $grey-dark;
+  text-align: center;
+}
+
+.modal__checkbox-wrapper {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  min-width: 82px;
+  margin: 0 7px 0 0;
+}
+
+.modal__button {
+  @include font(17px);
+  font-weight: 700;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: $mobile-content-width;
+  background-color: $aqua-green;
+  color: $white;
+  padding: 14px 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

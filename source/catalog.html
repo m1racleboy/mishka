@@ -186,7 +186,33 @@
       </a>
     </p>
   </footer>
+
+  <section class="modal">
+    <div class="container">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <p class="modal__description description">Выберите размер</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal__size-wrapper">
+          <div class="modal__checkbox-wrapper">
+            <input class="visually-hidden modal__checkbox" type="checkbox" id="s" name="size" value="s" checked>
+            <label class="modal__label" for="s">S</label>
+          </div>
+          <div class="modal__checkbox-wrapper">
+            <input class="visually-hidden modal__checkbox" type="checkbox" id="m" name="size" value="m" checked>
+            <label class="modal__label" for="m">M</label>
+          </div>
+          <div class="modal__checkbox-wrapper">
+            <input class="visually-hidden modal__checkbox" type="checkbox" id="l" name="size" value="l" checked>
+            <label class="modal__label" for="l">L</label>
+          </div>
+        </div>
+        <button class="modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
