@@ -1,38 +1,85 @@
 .modal {
-  @include border(top, $grey-modal);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: auto;
+
+  background-color: $white-opacity;
+
+  display: none;
 }
 
-.modal__show {
+.modal--show {
   display: flex;
 }
 
+.modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 320px;
+  height: 336px;
+
+  outline: 1px solid $grey-modal;
+  box-shadow: 0 5px 10px $modal-shadow;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+  }
+}
+
 .modal__title {
-  @include font(25px, 30px);
-  color: $black;
+  width: 150px;
   margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 14px;
+
+  color: $black;
+  text-transform: uppercase;
+
+  @include font(25px, 30px);
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+
+    text-align: center;
+
+    @include font(30px, 57px);
+  }
 }
 
 .modal__form {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__size-wrapper {
   display: flex;
-  @include font(17px);
-  color: $grey-dark;
+  margin: 0 auto;
+  margin-bottom: 31px;
+
   font-weight: 700;
+  color: $grey-dark;
   text-transform: uppercase;
+
+  @include font(17px);
 }
 
 .modal__label {
   display: block;
   width: 100%;
   padding: 16px 0;
+
   text-align: center;
-  @include border-all($grey-dark-opacity);
 
   transition: border-color 0.3s;
+
+  @include border-all($grey-dark-opacity);
 
   &:hover,
   &:focus {
@@ -50,31 +97,50 @@
 }
 
 .modal__description {
-  @include font(15px, 30px);
-  color: $grey-dark;
+  margin-bottom: 21px;
+
   text-align: center;
+  color: $grey-dark;
+
+  @include font(15px, 30px);
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px);
+  }
 }
 
 .modal__checkbox-wrapper {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
   min-width: 82px;
-  margin: 0 7px 0 0;
+
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 112px;
+  }
 }
 
 .modal__button {
-  @include font(17px);
-  font-weight: 700;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
   width: $mobile-content-width;
-  background-color: $aqua-green;
-  color: $white;
+  margin: 0 auto;
   padding: 14px 0;
+
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $aqua-green;
+  border: none;
+
+  @include font(17px);
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
   }
 }

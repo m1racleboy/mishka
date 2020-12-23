@@ -146,4 +146,8 @@
   border: none;
 
   @include bg-img("cart.svg");
+
+  &:hover {
+    cursor: pointer;
+  }
 }
