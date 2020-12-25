@@ -8,7 +8,7 @@ navToggle.addEventListener('click', function () {
 });
 
 let modal = document.querySelector('.modal');
-let modalButton = document.querySelectorAll('.js-modal-button');
+let modalButton = document.querySelectorAll('.js-open-modal');
 
 for (let i = 0; i < modalButton.length; i++) {
   modalButton[i].onclick = function () {
@@ -16,11 +16,20 @@ for (let i = 0; i < modalButton.length; i++) {
   };
 }
 
+document.addEventListener('keydown', function (e) {
+  let keyCode = e.keyCode;
+  if (keyCode === 27) {
+    modal.classList.remove('modal--show');
+  }
+});
+
 modal.addEventListener('click', function (e) {
   if (e.target === modal) {
     modal.classList.remove('modal--show');
   }
 });
+
+
 
 let slideIndex = 1;
 
