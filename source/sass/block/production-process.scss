@@ -30,6 +30,8 @@
 .production-process__title {
   position: relative;
 
+  display: flex;
+
   margin-left: 49px;
 
   font-weight: 700;
@@ -37,20 +39,22 @@
   @include font(17px, 24px);
 
   &::before {
-    content: "";
+    content: url("../img/video.svg");
     position: absolute;
-    top: 50%;
     left: 0;
+    margin-top: 24px;
 
     width: 32px;
     height: 22px;
 
     transform: translate(-50%, -50%);
 
-    @include bg-img("video.svg");
+    @media (min-width: $tablet-width) {
+      margin-top: 8px;
+    }
 
     @media (min-width: $desktop-width) {
-      top: -39px;
+      margin-top: -39px;
       left: 17px;
     }
   }
@@ -163,7 +167,6 @@
 }
 
 .production-process__video-button {
-  content: "";
   position: absolute;
   top: 50%;
   left: 50%;

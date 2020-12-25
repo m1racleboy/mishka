@@ -85,7 +85,7 @@
           <img class="week-product__img" src="img/triple-set-mobile.jpg"
             alt="Вязаные корзинки, сделанные компанией Мишка" width="260" height="315" />
           <p class="week-product__price description">Цена: 990 руб.</p>
-          <button type="button" class="week-product__button button">
+          <button type="button" class="week-product__button button js-modal-button">
             Заказать
           </button>
         </div>
@@ -224,12 +224,12 @@
                 <span class="reviews__author-contact">@misssssiskras</span>
               </cite>
               <p class="reviews__toggles">
-                <button class="reviews-toggle reviews-toggle__back" aria-label="Назад">
+                <button class="reviews-toggle reviews-toggle__back" aria-label="Назад" onclick="minusSlide()">
                   <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
                   </svg>
                 </button>
-                <button class="reviews-toggle reviews-toggle__next" aria-label="Вперед">
+                <button class="reviews-toggle reviews-toggle__next" aria-label="Вперед" onclick="plusSlide()">
                   <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
                   </svg>
@@ -251,12 +251,37 @@
                 <span class="reviews__author-contact">@misssssiskras2</span>
               </cite>
               <p class="reviews__toggles">
-                <button class="reviews-toggle reviews-toggle__back" aria-label="Назад">
+                <button class="reviews-toggle reviews-toggle__back" aria-label="Назад" onclick="minusSlide()">
                   <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
                   </svg>
                 </button>
-                <button class="reviews-toggle reviews-toggle__next" aria-label="Вперед">
+                <button class="reviews-toggle reviews-toggle__next" aria-label="Вперед" onclick="plusSlide()">
+                  <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
+                  </svg>
+                </button>
+              </p>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__content">
+              <p class="reviews__description description">
+                Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого<br> количества лайков,
+                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
+                сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__author-name">Елена Красильникова</span>
+                <span class="reviews__author-contact">@misssssiskras3</span>
+              </cite>
+              <p class="reviews__toggles">
+                <button class="reviews-toggle reviews-toggle__back" aria-label="Назад" onclick="minusSlide()">
+                  <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+                  </svg>
+                </button>
+                <button class="reviews-toggle reviews-toggle__next" aria-label="Вперед" onclick="plusSlide()">
                   <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
                   </svg>
@@ -379,31 +404,27 @@
     </p>
   </footer>
 
-  <section class="modal">
-    <div class="modal__wrapper">
-      <div class="container">
-        <h2 class="modal__title title">Добавить в корзину</h2>
-        <p class="modal__description description">Выберите размер:</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="modal__size-wrapper">
-            <div class="modal__checkbox-wrapper">
-              <input class="visually-hidden modal__checkbox" type="checkbox" id="s" name="size" value="s" checked>
-              <label class="modal__label" for="s">S</label>
-            </div>
-            <div class="modal__checkbox-wrapper">
-              <input class="visually-hidden modal__checkbox" type="checkbox" id="m" name="size" value="m">
-              <label class="modal__label" for="m">M</label>
-            </div>
-            <div class="modal__checkbox-wrapper">
-              <input class="visually-hidden modal__checkbox" type="checkbox" id="l" name="size" value="l">
-              <label class="modal__label" for="l">L</label>
-            </div>
-          </div>
-          <button class="modal__button" type="submit">Добавить</button>
-        </form>
-      </div>
-    </div>
-  </section>
+  <div class="modal">
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <p class="modal__description description">Выберите размер:</p>
+      <ul class="modal__size-wrapper list">
+        <li class="modal__checkbox-wrapper">
+          <input class="visually-hidden modal__checkbox" type="checkbox" id="s" name="size" value="s" checked>
+          <label class="modal__label" for="s">S</label>
+        </li>
+        <li class="modal__checkbox-wrapper">
+          <input class="visually-hidden modal__checkbox" type="checkbox" id="m" name="size" value="m">
+          <label class="modal__label" for="m">M</label>
+        </li>
+        <li class="modal__checkbox-wrapper">
+          <input class="visually-hidden modal__checkbox" type="checkbox" id="l" name="size" value="l">
+          <label class="modal__label" for="l">L</label>
+        </li>
+      </ul>
+      <button class="modal__button" type="submit">Добавить</button>
+    </form>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

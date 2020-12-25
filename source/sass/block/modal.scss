@@ -1,11 +1,39 @@
+// .modal {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+
+//   background-color: $white-opacity;
+
+//   display: none;
+// }
+
+// .modal--show {
+//   display: flex;
+// }
+
+// .modal__wrapper {
+//   margin: auto;
+
+//   width: 320px;
+//   height: 336px;
+
+//   outline: 1px solid $grey-modal;
+//   box-shadow: 0 5px 10px $modal-shadow;
+
+//   @media (min-width: $tablet-width) {
+//     width: 566px;
+//   }
+// }
+
 .modal {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
-  margin: auto;
 
   background-color: $white-opacity;
 
@@ -14,23 +42,6 @@
 
 .modal--show {
   display: flex;
-}
-
-.modal__wrapper {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-
-  width: 320px;
-  height: 336px;
-
-  outline: 1px solid $grey-modal;
-  box-shadow: 0 5px 10px $modal-shadow;
-  transform: translate(-50%, -50%);
-
-  @media (min-width: $tablet-width) {
-    width: 566px;
-  }
 }
 
 .modal__title {
@@ -56,6 +67,19 @@
 .modal__form {
   display: flex;
   flex-direction: column;
+
+  margin: auto;
+  padding-bottom: 46px;
+
+  width: 320px;
+  min-height: 336px;
+
+  outline: 1px solid $grey-modal;
+  box-shadow: 0 5px 10px $modal-shadow;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+  }
 }
 
 .modal__size-wrapper {
