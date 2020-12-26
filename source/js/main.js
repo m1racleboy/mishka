@@ -29,8 +29,6 @@ modal.addEventListener('click', function (e) {
   }
 });
 
-
-
 let slideIndex = 1;
 
 showSlides(slideIndex);
@@ -44,8 +42,7 @@ function minusSlide() {
 }
 
 function showSlides(n) {
-
-  let slides = document.querySelector(".reviews__item");
+  let slides = document.getElementsByClassName("reviews__item");
 
   if (n > slides.length) {
     slideIndex = 1
