@@ -17,6 +17,8 @@
 }
 
 .filters__title {
+  position: relative;
+
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -24,6 +26,33 @@
   text-transform: uppercase;
 
   @include font(17px);
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: 0;
+
+      width: 200px;
+
+      @include border(top, $green-border);
+    }
+  }
+
+  &-phone::after {
+    @media (max-width: $mobile-width-only) {
+      top: 8px;
+    }
+  }
+
+  &-mail::after {
+    @media (max-width: $mobile-width-only) {
+      top: 8px;
+
+      width: 182px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 125px;
@@ -187,7 +216,7 @@
 .filters__radio:checked + .filters__type-label::after {
   content: "";
   position: absolute;
-  top: 46%;
+  top: 48%;
   left: -40px;
 
   width: 16px;
@@ -288,7 +317,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      top: 52%;
+      top: 14px;
 
       width: 52px;
       height: 52px;
@@ -296,7 +325,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 48%;
+      top: 12px;
     }
   }
 }
@@ -439,9 +468,13 @@
 .filters__input-mail {
   position: relative;
 
+  padding-top: 15px;
+  padding-bottom: 19px;
+
   background-color: transparent;
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 17px;
     width: $desktop-content;
   }
 }

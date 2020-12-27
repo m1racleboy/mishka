@@ -1,0 +1,142 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: $white-opacity;
+
+  display: none;
+}
+
+.modal--show {
+  display: flex;
+}
+
+.modal__title {
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 14px;
+
+  color: $black;
+  text-transform: uppercase;
+
+  @include font(25px, 30px);
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+
+    text-align: center;
+
+    @include font(30px, 57px);
+  }
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $white;
+
+  margin: auto;
+  padding-bottom: 46px;
+
+  width: 320px;
+  min-height: 336px;
+
+  outline: 1px solid $grey-modal;
+  box-shadow: 0 5px 10px $modal-shadow;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+  }
+}
+
+.modal__size-wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 31px;
+
+  font-weight: 700;
+  color: $grey-dark;
+  text-transform: uppercase;
+
+  @include font(17px);
+}
+
+.modal__label {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+
+  text-align: center;
+
+  transition: border-color 0.3s;
+
+  @include border-all($grey-dark-opacity);
+
+  &:hover,
+  &:focus {
+    border-color: $grey-dark-light;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-color: $aqua-green;
+  }
+}
+
+.modal__checkbox:checked + .modal__label {
+  border-color: $aqua-green;
+}
+
+.modal__description {
+  margin-bottom: 21px;
+
+  text-align: center;
+  color: $grey-dark;
+
+  @include font(15px, 30px);
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px);
+  }
+}
+
+.modal__checkbox-wrapper {
+  min-width: 82px;
+
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 112px;
+  }
+}
+
+.modal__button {
+  width: $mobile-content-width;
+  margin: 0 auto;
+  padding: 14px 0;
+
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $aqua-green;
+  border: none;
+
+  @include font(17px);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}

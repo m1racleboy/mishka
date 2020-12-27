@@ -6,31 +6,34 @@
 
 .page-main__title {
   margin: 0;
+  padding-bottom: 73px;
 
   font-weight: 700;
+  text-align: center;
 
   @include font(27px, 30px);
 
-  padding-bottom: 73px;
-  text-align: center;
-
   @media (min-width: $tablet-width) {
-    @include font(43px, 50px);
     padding-top: 29px;
+
+    @include font(43px, 50px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font(53px, 57px);
     padding-bottom: 100px;
+
+    @include font(53px, 57px);
   }
 }
 
 .page-main__title-wrapper {
   position: relative;
   z-index: -1;
-  background-color: $grey-light;
+
   margin-bottom: 17px;
   padding-top: 73px;
+
+  background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
@@ -38,10 +41,10 @@
     &::after {
       content: "";
       position: absolute;
+      bottom: -13px;
 
       width: 100%;
       height: 24px;
-      bottom: -13px;
       margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
 
       @include bg-img("zigzag-tablet.svg", 50%);
@@ -54,25 +57,28 @@
     &::after {
       content: "";
       position: absolute;
+      bottom: -13px;
 
       width: 100%;
       height: 34px;
-      bottom: -13px;
       margin: 0 calc((50vw - var(--content-area) / 2 + var(--content-area-padding)) * -1);
 
-      @include bg-img("zigzag-desktop.svg", 50%);
+      @include bg-img("zigzag-desktop-form.svg", 50%);
     }
   }
 }
 
 .page-main__description {
-  @include font(13px, 24px);
-  color: $grey-dark;
   margin-bottom: 28px;
 
+  color: $grey-dark;
+
+  @include font(13px, 24px);
+
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px);
     margin-bottom: 79px;
+
+    @include font(17px, 30px);
   }
 
   @media (min-width: $desktop-width) {

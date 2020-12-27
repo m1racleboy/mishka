@@ -5,7 +5,8 @@
     display: grid;
     margin-bottom: 48px;
 
-    grid-template: "a a a b b b b b"
+    grid-template:
+      "a a a b b b b b"
       "v v v b b b b b"
       "v v v b b b b b"
       "c c c b b b b b";
@@ -145,6 +146,9 @@
 .contacts__button {
   width: $mobile-content-width;
   margin-top: 41px;
+
+  text-align: center;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 230px;
