@@ -94,13 +94,8 @@
 }
 
 .main-header__item {
-  padding-top: 24px;
-  padding-bottom: 31px;
-
   @media (min-width: $tablet-width) {
     width: calc(var(--content-area) / 2);
-    padding-bottom: 40px;
-    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,9 +114,11 @@
 .main-header__link {
   position: relative;
 
-  display: block;
-  width: 120px;
+  display: flex;
+  width: 100%;
   padding-right: 140px;
+  padding-top: 24px;
+  padding-bottom: 31px;
 
   font-weight: 700;
   color: $white;
@@ -130,29 +127,25 @@
 
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
+    padding-bottom: 40px;
+    padding-left: 35px;
   }
 }
 
 .main-header__link-interior::after {
-  content: "";
+  content: url("../img/interior.svg");
   position: absolute;
-  top: -1px;
-  left: 214px;
+  right: 6px;
+  margin-top: -1px;
 
   width: 40px;
   height: 62px;
 
   opacity: 50%;
 
-  @include bg-img("interior.svg");
-
   @media (min-width: $tablet-width) {
-    top: 6px;
-    left: 223px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 413px;
+    margin-top: 6px;
+    margin-right: 30px;
   }
 
   &:hover,
@@ -166,25 +159,23 @@
 }
 
 .main-header__link-toy::after {
-  content: "";
+  content: url("../img/toy.svg");
   position: absolute;
-  top: -3px;
-  left: 203px;
+  right: -3px;
+  margin-top: -3px;
 
   width: 60px;
   height: 60px;
 
   opacity: 50%;
 
-  @include bg-img("toy.svg");
-
   @media (min-width: $tablet-width) {
-    top: 8px;
-    left: 206px;
+    margin-top: 8px;
+    margin-right: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 396px;
+    margin-right: 38px;
   }
 
   &:hover,
