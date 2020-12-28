@@ -53,6 +53,9 @@
 }
 
 .products__item-img {
+  width: 260px;
+  height: 195px;
+
   @media (min-width: $tablet-width) {
     width: 334px;
     height: 334px;

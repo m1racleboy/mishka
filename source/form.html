@@ -13,7 +13,11 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo-wrapper">
         <a href="index.html" class="page-header__logo link">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип - Мишка" />
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/mishka-logo-mobile.svg" alt="Логотип - Мишка" />
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Переключатель меню</span>
@@ -29,8 +33,8 @@
       </ul>
       <ul class="main-nav__list user-list list">
         <li class="user-list__item user-list__item-search">
-          <a class="user-list__link user-list__link-search link" href="blank.html"><span
-              class="user-list__search-wrapper">Поиск по сайту</span></a>
+          <a class="user-list__link user-list__link-search link" href="blank.html">
+            <span class="user-list__search-wrapper">Поиск по сайту</span></a>
         </li>
         <li class="user-list__item user-list__item-cart">
           <a class="user-list__link user-list__link-cart link" href="blank.html">Корзина: пока пуста</a>
