@@ -9,31 +9,39 @@
 
     margin-bottom: 81px;
 
-    @include border (bottom, $black-opacity, 1px);
+    @include border(bottom, $black-opacity, 1px);
   }
 }
 
-.page-header__logo img {
-  width: 86px;
-  height: 79px;
+.page-header__logo-img {
+  @media (max-width: $mobile-width-only) {
+    width: 86px;
+    height: 79px;
+  }
 }
 
 .page-header__logo {
   display: block;
-  width: 86px;
-  height: 79px;
   margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    width: 86px;
+    height: 79px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: auto 0;
-    margin-right: auto;
+    margin-top: 22px;
+    margin-left: -2px;
 
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 9px;
 
     grid-column: 2/3;
     grid-row: 1/2;

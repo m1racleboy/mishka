@@ -26,7 +26,7 @@
     @include bg-img("zigzag.svg", 50%);
 
     @media (min-width: $tablet-width) {
-      bottom: 0;
+      bottom: -1px;
       left: 0;
 
       height: 17px;
@@ -57,6 +57,11 @@
       margin-left: -50px;
 
       @include bg-img("review.png");
+
+      @media (min-resolution: 2dppx) {
+        @include bg-img("review@2x.png");
+        background-size: 350px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {

@@ -3,7 +3,12 @@
 
   background-color: $grey-bg;
 
-  @include bg-img("mishka-home-mobile.png", 50%);
+  @include bg-img("hero-mobile.png", 50%);
+
+  @media (min-resolution: 2dppx) {
+    @include bg-img("hero-mobile@2x.png", 50%);
+    background-size: $mobile-width auto;
+  }
 
   @media (max-width: $mobile-width-only) {
     margin-top: -18px;
@@ -13,6 +18,11 @@
     padding-top: 82px;
 
     @include bg-img("hero-tablet.png", 50%);
+
+    @media (min-resolution: 2dppx) {
+      @include bg-img("hero-tablet@2x.png", 50%);
+      background-size: $tablet-width auto;
+    }
 
     &::after {
       content: "";
@@ -30,6 +40,11 @@
     margin-bottom: 109px;
 
     @include bg-img("hero-desktop.png", 50%);
+
+    @media (min-resolution: 2dppx) {
+      @include bg-img("hero-desktop@2x.png", 50%);
+      background-size: $desktop-width auto;
+    }
 
     &::after {
       content: "";
@@ -116,9 +131,8 @@
 
   display: flex;
   width: 100%;
-  padding-right: 140px;
+  min-height: 103px;
   padding-top: 24px;
-  padding-bottom: 31px;
 
   font-weight: 700;
   color: $white;
@@ -127,16 +141,18 @@
 
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
-    padding-bottom: 40px;
-    padding-left: 35px;
+    width: calc(var(--content-area) / 2 - var(--content-area-padding) * 2);
+    margin-top: 2px;
+    padding-left: 36px;
+    min-height: 122px;
   }
 }
 
 .main-header__link-interior::after {
   content: url("../img/interior.svg");
-  position: absolute;
-  right: 6px;
+  display: flex;
   margin-top: -1px;
+  margin-left: 108px;
 
   width: 40px;
   height: 62px;
@@ -144,8 +160,13 @@
   opacity: 50%;
 
   @media (min-width: $tablet-width) {
-    margin-top: 6px;
-    margin-right: 30px;
+    margin-top: 4px;
+    margin-left: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+    margin-left: 300px;
   }
 
   &:hover,
@@ -160,9 +181,8 @@
 
 .main-header__link-toy::after {
   content: url("../img/toy.svg");
-  position: absolute;
-  right: -3px;
   margin-top: -3px;
+  margin-left: 114px;
 
   width: 60px;
   height: 60px;
@@ -170,12 +190,12 @@
   opacity: 50%;
 
   @media (min-width: $tablet-width) {
-    margin-top: 8px;
-    margin-right: 36px;
+    margin-top: 6px;
+    margin-left: 110px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 38px;
+    margin-left: 300px;
   }
 
   &:hover,
