@@ -13,20 +13,14 @@
   }
 }
 
-.page-header__logo-img {
-  @media (max-width: $mobile-width-only) {
-    width: 86px;
-    height: 79px;
-  }
-}
-
 .page-header__logo {
   display: block;
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
     width: 86px;
-    height: 79px;
+    padding-top: 22px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $tablet-width) {

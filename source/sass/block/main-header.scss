@@ -5,7 +5,7 @@
 
   @include bg-img("hero-mobile.png", 50%);
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina) {
     @include bg-img("hero-mobile@2x.png", 50%);
     background-size: $mobile-width auto;
   }
@@ -19,7 +19,7 @@
 
     @include bg-img("hero-tablet.png", 50%);
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina) {
       @include bg-img("hero-tablet@2x.png", 50%);
       background-size: $tablet-width auto;
     }
@@ -41,7 +41,7 @@
 
     @include bg-img("hero-desktop.png", 50%);
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina) {
       @include bg-img("hero-desktop@2x.png", 50%);
       background-size: $desktop-width auto;
     }

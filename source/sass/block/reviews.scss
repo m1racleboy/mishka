@@ -58,7 +58,7 @@
 
       @include bg-img("review.png");
 
-      @media (min-resolution: 2dppx) {
+      @media (min-resolution: $retina) {
         @include bg-img("review@2x.png");
         background-size: 350px auto;
       }
