@@ -137,7 +137,20 @@
   font-weight: 700;
   color: $white;
 
+  text-decoration: none;
+
   @include font(19px, 24px);
+
+  transition: opacity 0.3s;
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 70%;
+  }
+
+  &:active::after {
+    opacity: 30%;
+  }
 
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
@@ -168,15 +181,6 @@
     margin-top: 4px;
     margin-left: 300px;
   }
-
-  &:hover,
-  &:focus {
-    opacity: 30%;
-  }
-
-  &:active {
-    opacity: 70%;
-  }
 }
 
 .main-header__link-toy::after {
@@ -196,14 +200,5 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 300px;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 30%;
-  }
-
-  &:active {
-    opacity: 70%;
   }
 }

@@ -17,6 +17,17 @@
 
   font-weight: 700;
 
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @include font(17px, 24px);
 
   @media (min-width: $tablet-width) {
@@ -41,6 +52,15 @@
     }
   }
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px $black-opacity;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $black-opacity;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin-bottom: 54px;
@@ -62,6 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 316px;
     height: 462px;
   }
 }
@@ -156,5 +177,18 @@
 }
 
 .products__link {
+  line-height: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 100%;
+  }
+
+  &:active {
+    opacity: 100%;
+  }
+}
+
+.products__title-link {
   line-height: 0;
 }

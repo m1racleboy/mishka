@@ -132,6 +132,10 @@
   display: block;
   width: 179px;
 
+  text-decoration: none;
+
+  transition: color 0.3s, border-color 0.3s;
+
   color: $grey-dark;
 
   @include border(bottom, $green-border, 1px);
@@ -140,6 +144,16 @@
     width: 204px;
 
     @include font(17px, 30px);
+  }
+
+  &:hover,
+  &:focus {
+    color: $green-link;
+    border-color: $green-link;
+  }
+
+  &:active {
+    border-color: $green-opacity;
   }
 }
 

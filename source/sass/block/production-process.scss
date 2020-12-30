@@ -4,6 +4,15 @@
 
   @include border-all($grey-border, 1px);
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px $black-opacity;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $black-opacity;
+  }
+
   @media (max-width: $mobile-width-only) {
     margin-bottom: 58px;
     padding-bottom: 32px;
@@ -123,6 +132,9 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+
+    width: 683px;
+    height: $map-size;
   }
 }
 
@@ -174,9 +186,26 @@
   width: 109px;
   height: 85px;
 
+  transition: background-size 0.2s, width 0.2s, height 0.2s, opacity 0.2s;
+
   background-color: transparent;
   border: none;
   transform: translate(-50%, -50%);
 
   @include bg-img("video-button.svg");
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    width: 121px;
+    height: 92px;
+    background-size: 121px 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    background-size: 81px 62px;
+    opacity: 30%;
+  }
 }
