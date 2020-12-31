@@ -427,12 +427,54 @@
 
 .filters__contacts-phone,
 .filters__contacts-email {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+}
+
+.filters__contacts-svg {
+  position: absolute;
+
+  &phone {
+    top: 32px;
+    right: 7px;
+  }
+
+  &mail {
+    top: 37px;
+    right: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &phone {
+      top: 13px;
+      right: 26px;
+    }
+
+    &mail {
+      top: 16px;
+      right: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &phone {
+      right: 183px;
+    }
+
+    &mail {
+      right: 179px;
+    }
+  }
+
+  opacity: 80%;
+
+  filter: grayscale(100%);
 }
 
 .filters__title-phone,
@@ -460,8 +502,17 @@
 
   background-color: transparent;
 
+  transition: opacity 0.3s, fill 0.3s;
+
   @media (min-width: $desktop-width) {
     width: $desktop-content;
+  }
+
+  &:hover + svg,
+  &:focus + svg {
+    opacity: 100%;
+
+    filter: grayscale(0);
   }
 }
 
@@ -473,9 +524,18 @@
 
   background-color: transparent;
 
+  transition: opacity 0.3s, fill 0.3s;
+
   @media (min-width: $desktop-width) {
     padding-bottom: 17px;
     width: $desktop-content;
+  }
+
+  &:hover + svg,
+  &:focus + svg {
+    opacity: 100%;
+
+    filter: grayscale(0);
   }
 }
 
