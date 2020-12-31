@@ -171,8 +171,23 @@
 
   @include bg-img("cart.svg");
 
-  &:hover {
+  opacity: 70%;
+
+  filter: grayscale(100%);
+
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
     cursor: pointer;
+
+    opacity: 100%;
+
+    filter: grayscale(0);
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }
 

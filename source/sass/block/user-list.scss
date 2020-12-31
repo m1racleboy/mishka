@@ -63,6 +63,19 @@
 .user-list__link-cart {
   position: relative;
 
+  transition: opacity 0.3s;
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 100%;
+
+    filter: grayscale(0);
+  }
+
+  &:active::before {
+    opacity: 30%;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -71,6 +84,10 @@
     height: 18px;
 
     @include bg-img("cart.svg");
+
+    opacity: 70%;
+
+    filter: grayscale(100%);
 
     @media (max-width: $mobile-width-only) {
       top: 2px;
@@ -105,6 +122,19 @@
 .user-list__link-search {
   position: relative;
 
+  transition: opacity 0.3s;
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 100%;
+
+    filter: grayscale(0);
+  }
+
+  &:active::before {
+    opacity: 30%;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -113,6 +143,10 @@
     height: 18px;
 
     @include bg-img("search.svg");
+
+    opacity: 70%;
+
+    filter: grayscale(100%);
 
     @media (max-width: $mobile-width-only) {
       top: 3px;

@@ -109,6 +109,13 @@
 }
 
 .main-header__item {
+  transition: margin-top 0.3s;
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+  }
+
   @media (min-width: $tablet-width) {
     width: calc(var(--content-area) / 2);
   }

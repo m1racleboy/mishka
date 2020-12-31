@@ -213,6 +213,18 @@
 
   background-color: transparent;
 
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @media (max-width: $mobile-width-only) {
     width: 130px;
     padding: 11px 49px 10px 37px;

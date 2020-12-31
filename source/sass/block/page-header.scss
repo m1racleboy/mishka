@@ -17,6 +17,17 @@
   display: block;
   margin: 0 auto;
 
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @media (max-width: $mobile-width-only) {
     width: 86px;
     padding-top: 22px;
