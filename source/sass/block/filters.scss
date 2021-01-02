@@ -344,7 +344,7 @@
     width: 23px;
     height: 16px;
 
-    @include bg-img("tick-mobile.png");
+    @include bg-img("Tick-mobile.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -354,7 +354,7 @@
     width: 33px;
     height: 22px;
 
-    @include bg-img("tick.png");
+    @include bg-img("Tick.png");
   }
 
   @media (min-width: $desktop-width) {
