@@ -35,11 +35,12 @@
   }
 }
 
-.footer-social__item {
+.footer-social__link {
+  
   transition: fill 0.3s, opacity 0.3s;
 
-  &:hover path,
-  &:focus path {
+  &:hover &-icon,
+  &:focus &-icon {
     fill: $green-link;
   }
 

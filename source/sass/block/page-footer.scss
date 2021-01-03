@@ -41,8 +41,12 @@
 
   transition: fill 0.3s, opacity 0.3s;
 
-  &:hover path,
-  &:focus path {
+  &-icon {
+    fill: $aqua-green;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: $green-link;
   }
 
@@ -66,8 +70,8 @@
 
   transition: fill 0.3s, opacity 0.3s;
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $green-link;
   }
 
