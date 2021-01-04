@@ -12,8 +12,12 @@
   <header class="page-header page-header--pulls-up container">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo-wrapper">
-        <a href="index.html" class="page-header__logo link">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип - Мишка" />
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/mishka-logo-mobile.svg" alt="Логотип - Мишка" width="86" height="35">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Переключатель меню</span>
@@ -29,8 +33,8 @@
       </ul>
       <ul class="main-nav__list user-list list">
         <li class="user-list__item user-list__item-search">
-          <a class="user-list__link user-list__link-search link" href="blank.html"><span
-              class="user-list__search-wrapper">Поиск по сайту</span></a>
+          <a class="user-list__link user-list__link-search link" href="blank.html">
+            <span class="user-list__search-wrapper">Поиск по сайту</span></a>
         </li>
         <li class="user-list__item user-list__item-cart">
           <a class="user-list__link user-list__link-cart link" href="blank.html">Корзина: пока пуста</a>
@@ -53,11 +57,15 @@
         <ul class="products__list list">
           <li class="products__item">
             <a href="product-*.html" class="products__link link">
-              <img class="products__item-img" src="img/photo-1-mobile.jpg" width="260" height="195"
-                alt="Игрушка зайчик попрыгайчик компании Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="products__item-img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                  width="260" height="195" alt="Игрушка зайчик попрыгайчик компании Мишка">
+              </picture>
             </a>
             <div class="products__item-wrapper">
-              <a href="product-*.html" class="products__link link">
+              <a href="product-*.html" class="products__title-link link">
                 <h3 class="products__title title">Зайчик-попрыгайчик</h3>
               </a>
               <p class="products__description description">Рост 30 см, вес 200 г</p>
@@ -69,11 +77,15 @@
           </li>
           <li class="products__item">
             <a href="product-*.html" class="products__link link">
-              <img class="products__item-img" src="img/photo-2-mobile.jpg" width="260" height="195"
-                alt="Корзина для белья компании Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="products__item-img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                  width="260" height="195" alt="Корзина для белья компании Мишка">
+              </picture>
             </a>
             <div class="products__item-wrapper">
-              <a href="product-*.html" class="products__link link">
+              <a href="product-*.html" class="products__title-link link">
                 <h3 class="products__title title">Корзинка для белья</h3>
               </a>
               <p class="products__description description">Диаметр 15 см, высота 10 см</p>
@@ -85,11 +97,15 @@
           </li>
           <li class="products__item">
             <a href="product-*.html" class="products__link link">
-              <img class="products__item-img" src="img/photo-3-mobile.jpg" width="260" height="195"
-                alt="Большая корзинка для игрушек компании Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="products__item-img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                  width="260" height="195" alt="Большая корзинка для игрушек компании Мишка">
+              </picture>
             </a>
             <div class="products__item-wrapper">
-              <a href="product-*.html" class="products__link link">
+              <a href="product-*.html" class="products__title-link link">
                 <h3 class="products__title title">Большая корзинка<br>для игрушек</h3>
               </a>
               <p class="products__description description">Диаметр 30 см, высота 30 см</p>
@@ -104,13 +120,15 @@
       <section class="production-process">
         <h2 class="production-process__title title">Процесс производства</h2>
         <div class="production-process__video-wrapper">
-          <img class="production-process__video-img" src="img/video-mobile.jpg" width="260" height="150"
-            alt="Превью к видео - процесс производства компании Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="production-process__video-img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x"
+              width="260" height="150" alt="Превью к видео - процесс производства компании Мишка">
+          </picture>
           <button type="button" class="production-process__video-button" aria-label="Включить видео"></button>
         </div>
-        <p class="production-process__description description">По просьбам наших любимых фолловеров мы сняли для вас
-          подробное видео
-          о том, как появляются наши товары.</p>
+        <p class="production-process__description description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="form.html" class="production-process__button button">Сделать заказ</a>
       </section>
     </div>
@@ -118,7 +136,7 @@
   <footer class="page-footer container">
     <section class="footer-social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="page-footer__logo link" href="index.html">
+      <a class="page-footer__logo" href="index.html">
         <svg width="106" height="34" viewBox="0 0 106 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d)">
             <path

@@ -173,12 +173,29 @@
 }
 
 .week-product__img {
+  width: 260px;
+  height: 315px;
+
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    top: 13px;
     right: 0;
+
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -154px;
+    right: 0;
+
+    z-index: -1;
+
+    width: 525px;
+    height: 636px;
   }
 }
 

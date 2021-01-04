@@ -1,6 +1,6 @@
 .footer-social {
   @media (max-width: $mobile-width-only) {
-    @include border (bottom, $grey-white, 1px);
+    @include border(bottom, $grey-white, 1px);
   }
 
   @media (min-width: $tablet-width) {
@@ -32,5 +32,18 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+}
+
+.footer-social__item {
+  transition: fill 0.3s, opacity 0.3s;
+
+  &:hover path,
+  &:focus path {
+    fill: $green-link;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }

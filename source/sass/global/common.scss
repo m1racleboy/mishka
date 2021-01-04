@@ -89,15 +89,15 @@ input[type="radio"].visually-hidden {
   color: $black;
   text-decoration: none;
 
-  transition: opacity 0.3s;
+  transition: color 0.3s;
 
   &:hover,
   &:focus {
-    opacity: 60%;
+    color: $black-opacity-half;
   }
 
   &:active {
-    opacity: 30%;
+    color: $black-opacity-light;
   }
 }
 

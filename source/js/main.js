@@ -53,8 +53,8 @@ function showSlides(n) {
   }
 
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.remove('reviews__item--current')
   }
 
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].classList.add('reviews__item--current');
 }

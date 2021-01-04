@@ -10,6 +10,7 @@ $grey-active: rgba(255, 255, 255, 0.3);
 
 $black: #000000;
 $black-opacity: rgba(0, 0, 0, 0.1);
+$black-opacity-half: rgba(0, 0, 0, 0.6);
 $black-opacity-light: rgba(0, 0, 0, 0.3);
 $modal-shadow: rgba(0, 1, 1, 0.25);
 $button-black: #231f20;
@@ -20,6 +21,8 @@ $white-opacity: rgba(255, 255, 255, 0.9);
 $green-border: #62d1ba;
 $aqua-green: #63d1bb;
 $turquoise: #56c3b2;
+$green-link: #46c1ae;
+$green-opacity: rgba(70, 193, 174, 0.1);
 
 $mobile-width: 320px;
 $mobile-content-width: 260px;
@@ -29,3 +32,6 @@ $tablet-width: 768px;
 $tablet-content-width: 292px;
 $tablet-width-max: 1149px;
 $mobile-width-only: 767px;
+$map-size: 455px;
+
+$retina: 2dppx;
