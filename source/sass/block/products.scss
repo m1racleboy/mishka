@@ -114,6 +114,8 @@
 .products__item-wrapper {
   position: relative;
 
+  margin-top: auto;
+
   @include border-all($grey-border, 1px);
 
   @media (max-width: $mobile-width-only) {

@@ -20,10 +20,11 @@
     position: absolute;
     bottom: -51px;
 
-    width: 100%;
+    width: 100vw;
     height: 6px;
 
     @include bg-img("zigzag.svg", 50%);
+    background-repeat: repeat-x;
 
     @media (min-width: $tablet-width) {
       bottom: -1px;
@@ -32,12 +33,14 @@
       height: 17px;
 
       @include bg-img("zigzag-grey-tablet.svg", 50%);
+      background-repeat: repeat-x;
     }
 
     @media (min-width: $desktop-width) {
       height: 23px;
 
       @include bg-img("zigzag-grey-desktop.svg", 50%);
+      background-repeat: repeat-x;
     }
   }
 }

@@ -35,15 +35,17 @@
   }
 }
 
-.footer-social__item {
-  transition: fill 0.3s, opacity 0.3s;
-
-  &:hover path,
-  &:focus path {
+.footer-social__link {
+  &:hover &-icon,
+  &:focus &-icon {
     fill: $green-link;
   }
 
   &:active {
     opacity: 30%;
   }
+}
+
+.footer-social__link-icon {
+  transition: fill 0.3s, opacity 0.3s;
 }
