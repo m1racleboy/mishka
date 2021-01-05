@@ -11,10 +11,11 @@
     position: absolute;
     bottom: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 6px;
 
     @include bg-img("zigzag.svg", 50%);
+    background-repeat: repeat-x;
   }
 
   @media (min-width: $tablet-width) {
@@ -26,10 +27,10 @@
       position: absolute;
       bottom: 0;
 
-      width: 100%;
       height: 17px;
 
       @include bg-img("zigzag-grey-tablet.svg", 50%);
+      background-repeat: repeat-x;
     }
   }
 
@@ -38,14 +39,10 @@
     padding-bottom: 96px;
 
     &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-
-      width: 100%;
       height: 23px;
 
       @include bg-img("zigzag-grey-desktop.svg", 50%);
+      background-repeat: repeat-x;
     }
   }
 }

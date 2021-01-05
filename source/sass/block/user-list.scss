@@ -114,6 +114,11 @@
 }
 
 .user-list__item-search {
+  @media (min-width: $tablet-width) {
+    @include border(right, $black-opacity);
+    @include border(left, $black-opacity);
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 50px;
   }
@@ -164,9 +169,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 44px 41px;
-
-    @include border(right, $black-opacity);
-    @include border(left, $black-opacity);
+    min-height: 88px;
+    width: 82px;
   }
 }

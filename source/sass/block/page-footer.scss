@@ -42,6 +42,8 @@
   transition: fill 0.3s, opacity 0.3s;
 
   &-icon {
+    transition: fill 0.3s, opacity 0.3s;
+
     fill: $aqua-green;
   }
 
@@ -68,8 +70,6 @@
 .page-footer__logo {
   display: none;
 
-  transition: fill 0.3s, opacity 0.3s;
-
   &:hover svg,
   &:focus svg {
     fill: $green-link;
@@ -82,4 +82,8 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+.page-footer__logo-icon {
+  transition: fill 0.3s, opacity 0.3s;
 }
