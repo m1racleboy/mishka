@@ -126,6 +126,10 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     flex-direction: column;
     justify-content: space-between;
     width: 334px;

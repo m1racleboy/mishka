@@ -19,6 +19,7 @@
     content: "";
     position: absolute;
     bottom: -51px;
+    left: 0;
 
     width: 100vw;
     height: 6px;
@@ -28,7 +29,6 @@
 
     @media (min-width: $tablet-width) {
       bottom: -1px;
-      left: 0;
 
       height: 17px;
 
