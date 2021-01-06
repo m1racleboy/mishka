@@ -277,6 +277,14 @@
   }
 }
 
+.filters__checkbox:focus + .filters__color-label::before {
+  border-color: $green-border;
+}
+
+.filters__radio:focus + .filters__type-label::before {
+  border-color: $green-border;
+}
+
 .filters__color-label {
   position: relative;
 
