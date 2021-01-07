@@ -1,5 +1,5 @@
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -7,58 +7,54 @@ navToggle.addEventListener('click', function () {
   navMain.classList.toggle('main-nav--closed');
 });
 
-let modal = document.querySelector('.modal');
-let modalButton = document.querySelectorAll('.js-open-modal');
+var modal = document.querySelector('.modal');
+var modalButton = document.querySelectorAll('.js-open-modal');
 
-if (document.querySelector('.js-open-modal')) {
-  for (let i = 0; i < modalButton.length; i++) {
-    modalButton[i].onclick = function () {
-      modal.classList.add('modal--show');
-    };
-  }
-
-  document.addEventListener('keydown', function (e) {
-    let keyCode = e.keyCode;
-    if (keyCode === 27) {
-      modal.classList.remove('modal--show');
-    }
-  });
-
-  modal.addEventListener('click', function (e) {
-    if (e.target === modal) {
-      modal.classList.remove('modal--show');
-    }
-  });
+for (var i = 0; i < modalButton.length; i++) {
+  modalButton[i].onclick = function () {
+    modal.classList.add('modal--show');
+  };
 }
 
-if (document.querySelector('.reviews')) {
-  let slideIndex = 1;
+document.addEventListener('keydown', function (e) {
+  var keyCode = e.keyCode;
+  if (keyCode === 27) {
+    modal.classList.remove('modal--show');
+  }
+});
 
-  showSlides(slideIndex);
+modal.addEventListener('click', function (e) {
+  if (e.target === modal) {
+    modal.classList.remove('modal--show');
+  }
+});
 
-  function plusSlide() {
-    showSlides(slideIndex += 1);
+var slideIndex = 1;
+
+showSlides(slideIndex);
+
+function plusSlide() {
+  showSlides(slideIndex += 1);
+}
+
+function minusSlide() {
+  showSlides(slideIndex -= 1);
+}
+
+function showSlides(n) {
+  var slides = document.getElementsByClassName("reviews__item");
+
+  if (n > slides.length) {
+    slideIndex = 1
   }
 
-  function minusSlide() {
-    showSlides(slideIndex -= 1);
+  if (n < 1) {
+    slideIndex = slides.length
   }
 
-  function showSlides(n) {
-    let slides = document.getElementsByClassName("reviews__item");
-
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-
-    if (n < 1) {
-      slideIndex = slides.length
-    }
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove('reviews__item--current');
-    }
-
-    slides[slideIndex - 1].classList.add('reviews__item--current');
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('reviews__item--current')
   }
+
+  slides[slideIndex - 1].classList.add('reviews__item--current');
 }
