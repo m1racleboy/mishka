@@ -21,6 +21,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -93,8 +94,7 @@ exports.sprite = sprite;
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/img/*.{jpg,png,svg,webp}",
-    "source/css/*.css"
+    "source/img/*.{jpg,png,svg,webp}"
   ], {
     base: "source"
   })
