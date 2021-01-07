@@ -10,7 +10,7 @@ navToggle.addEventListener('click', function () {
 let modal = document.querySelector('.modal');
 let modalButton = document.querySelectorAll('.js-open-modal');
 
-if (document.querySelector('.js-open-modal')) {
+if (modal) {
   for (let i = 0; i < modalButton.length; i++) {
     modalButton[i].onclick = function () {
       modal.classList.add('modal--show');
@@ -31,7 +31,9 @@ if (document.querySelector('.js-open-modal')) {
   });
 }
 
-if (document.querySelector('.reviews')) {
+let reviews = document.querySelector('.reviews');
+
+if (reviews) {
   let slideIndex = 1;
 
   showSlides(slideIndex);
