@@ -146,6 +146,10 @@
     @include font(17px, 30px);
   }
 
+  @media (min-width: $desktop-width) {
+    padding-bottom: 3px;
+  }
+
   &:hover,
   &:focus {
     color: $green-link;
@@ -172,7 +176,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 83px;
+    margin-top: 84px;
     margin-left: 175px;
 
     grid-area: c;

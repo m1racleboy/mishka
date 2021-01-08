@@ -88,7 +88,7 @@
   }
 }
 
-.modal__checkbox:checked + .modal__label {
+.modal__radio:checked + .modal__label {
   border-color: $aqua-green;
 }
 
@@ -105,7 +105,7 @@
   }
 }
 
-.modal__checkbox-wrapper {
+.modal__radio-wrapper {
   min-width: 82px;
 
   &:not(:last-child) {
