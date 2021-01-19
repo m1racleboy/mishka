@@ -4,9 +4,9 @@
   margin-bottom: 90px;
 
   @media (min-width: $tablet-width) {
+    min-height: 541px;
     margin-bottom: 70px;
     padding-top: 84px;
-    padding-bottom: 102px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,6 +194,9 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 284px;
+    right: 50px;
     display: grid;
     margin: 0;
     margin-right: 25px;
@@ -206,13 +209,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    top: 241px;
+
     margin-right: 19px;
     padding-bottom: 1px;
   }
 }
 
 .reviews-toggle {
-  position: relative;
 
   background-color: transparent;
 
@@ -259,17 +263,10 @@
     order: -1;
     width: 175px;
     margin-top: -5px;
+    margin-left: 310px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-  }
-}
-
-.reviews__br--desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }
