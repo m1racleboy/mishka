@@ -110,3 +110,21 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

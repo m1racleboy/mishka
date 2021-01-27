@@ -181,6 +181,9 @@
 
 .reviews__item--current {
   display: flex;
+
+  animation-name: bounce;
+  animation-duration: 1s;
 }
 
 .reviews__toggles {
@@ -211,7 +214,6 @@
 }
 
 .reviews-toggle {
-
   background-color: transparent;
 
   transition: opacity 0.3s;

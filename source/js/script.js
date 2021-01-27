@@ -40,6 +40,8 @@ if (reviews) {
     showSlides(slideIndex += 1);
   }
 
+  setInterval(plusSlide, 11000);
+
   function minusSlide() {
     showSlides(slideIndex -= 1);
   }
@@ -66,14 +68,6 @@ if (reviews) {
 
   const list = reviews.querySelector('.reviews__list');
 
-  /**
-   {
-    comment: string,
-    author: string,
-    nickname: string,
-   }
-   */
-
   const renderListItem = ({ body, name, email }) => {
     return `
   <li class="reviews__item">
@@ -90,12 +84,16 @@ if (reviews) {
   `;
   };
 
-  const renderList = (comments) => comments.forEach(comment => {
-    list.insertAdjacentHTML(
-      'beforeend',
-      renderListItem(comment)
-    )
-  });
+  const renderList = (comments) => {
+    let randomNum = Math.random() * 490;
+    let viewComments = comments.slice(randomNum, randomNum + 10);
+    viewComments.forEach(comment => {
+      list.insertAdjacentHTML(
+        'beforeend',
+        renderListItem(comment)
+      )
+    });
+  }
 
   var xhr = new XMLHttpRequest();
   xhr.open("GET", "https://jsonplaceholder.typicode.com/comments", true);
