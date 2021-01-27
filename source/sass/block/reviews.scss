@@ -134,12 +134,6 @@
   }
 }
 
-.reviews__br {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .reviews__author {
   display: block;
   margin-bottom: 32px;
@@ -196,7 +190,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 284px;
-    right: 50px;
+    right: calc(50% - var(--content-area) / 2 + var(--content-area-padding));
     display: grid;
     margin: 0;
     margin-right: 25px;
@@ -263,7 +257,7 @@
     order: -1;
     width: 175px;
     margin-top: -5px;
-    margin-left: 310px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {

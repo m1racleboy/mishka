@@ -36,8 +36,6 @@ let reviews = document.querySelector('.reviews');
 if (reviews) {
   let slideIndex = 1;
 
-  showSlides(slideIndex);
-
   function plusSlide() {
     showSlides(slideIndex += 1);
   }
@@ -63,4 +61,49 @@ if (reviews) {
 
     slides[slideIndex - 1].classList.add('reviews__item--current');
   }
+
+  let comments;
+
+  const list = reviews.querySelector('.reviews__list');
+
+  /**
+   {
+    comment: string,
+    author: string,
+    nickname: string,
+   }
+   */
+
+  const renderListItem = ({ body, name, email }) => {
+    return `
+  <li class="reviews__item">
+    <blockquote class="reviews__content">
+      <p class="reviews__description description">
+        ${body}
+      </p>
+      <cite class="reviews__author">
+        <span class="reviews__author-name">${name}</span>
+        <span class="reviews__author-contact">${email}</span>
+      </cite>
+    </blockquote>
+  </li>
+  `;
+  };
+
+  const renderList = (comments) => comments.forEach(comment => {
+    list.insertAdjacentHTML(
+      'beforeend',
+      renderListItem(comment)
+    )
+  });
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/comments", true);
+  xhr.onload = function () {
+    comments = JSON.parse(xhr.responseText);
+    renderList(comments);
+    showSlides(slideIndex);
+  };
+  xhr.send();
+
 }
