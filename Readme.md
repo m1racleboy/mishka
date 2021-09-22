@@ -1,10 +1,11 @@
 # Учебный проект "mishka"
 
-## 1. Стек: HTML5, CSS3, SCSS, gulp, js
-## 2. О проекте: Адаптивная верстка (mobilde-first), БЭМ, flex, grid
-## 3. Кроссбраузерность: Сhrome, Safari, Firefox
-## 4. Минификация: svg-sprite, js, css
-## 5. Images:
+## Стек: HTML5, CSS3, SCSS, gulp, js
+## О проекте: Адаптивная верстка (mobilde-first), БЭМ, flex, grid
+## Кроссбраузерность: Сhrome, Safari, Firefox
+## Минификация: svg-sprite, js, css
+## Preview:
+
 ### 1. main page: 
 ![Screenshot 2021-09-22 at 20-21-43 HTML Academy Мишка](https://user-images.githubusercontent.com/56030631/134392581-47b78eed-ddbd-4e6f-8500-bc09e0ccea27.png)
 ### 2 main page mobile: 
